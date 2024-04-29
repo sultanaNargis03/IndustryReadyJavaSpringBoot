@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\IndustryReadyJava\Maven\workspace\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+473585600.index
+3926893598.index

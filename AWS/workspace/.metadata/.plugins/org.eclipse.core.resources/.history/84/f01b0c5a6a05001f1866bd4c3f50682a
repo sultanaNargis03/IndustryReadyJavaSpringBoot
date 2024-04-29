@@ -1,0 +1,17 @@
+spring.application.name=EmployeeManagementApp
+server.port=5000
+
+#Elastic BeanStalk
+spring.datasource.url=jdbc:postgresql://localhost:5432/teluskodb
+spring.datasource.username=postgres
+spring.datasource.password=1234
+
+#ECS
+#spring.datasource.url=jdbc:postgresql://13.49.73.51:5432/teluskodb
+#spring.datasource.username=postgres
+#spring.datasource.password=12345678
+
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect

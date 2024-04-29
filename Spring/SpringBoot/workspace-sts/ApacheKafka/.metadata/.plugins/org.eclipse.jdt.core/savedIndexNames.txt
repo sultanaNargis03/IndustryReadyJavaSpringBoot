@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\IndustryReadyJava\Spring\SpringBoot\workspace-sts\ApacheKafka\.metadata\.plugins\org.eclipse.jdt.core
+1975932114.index
+1865797976.index
+45675027.index

@@ -1,0 +1,22 @@
+INDEX VERSION 1.4+D:\IndustryReadyJava\Spring\SpringBoot\workspace-sts\SpringRest\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2413382255.index
+4160191933.index
+2897992332.index
+3918990339.index
+2981840550.index
+732753294.index
+3725931558.index
+1094852416.index
+3015405307.index
+19268666.index
+1327988128.index
+2838521748.index
+2460921823.index
+627398410.index
+2670712209.index
+3853098825.index
+3337156190.index
+4121710079.index
+3392636682.index
+2415773604.index
+2782511550.index

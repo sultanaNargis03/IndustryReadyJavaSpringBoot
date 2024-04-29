@@ -1,0 +1,31 @@
+version: "3.8"
+
+services: 
+  app: 
+    build: .
+    ports: 
+    - "8080:8080"
+     
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: nargis
+      POSTGRES_PASSWORD : 1234
+      POSTGRES_DB: teluskodb
+    ports:
+      - 5433:5432 
+   # networks:
+    #  - s-network
+    volumes:
+      - postgres-s-data:/var/lib/postgresql/data
+ 
+#networks:
+ # s-network:
+  #  driver: bridge
+   
+volumes:
+  postgres-s-data:  
+         
+           
+         
+    

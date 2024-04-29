@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+D:\IndustryReadyJava\Spring\SpringBoot\MailIntegration\.metadata\.plugins\org.eclipse.jdt.core
+2710286409.index
+1999642867.index
+2429554191.index
+1865797976.index
+1826491019.index
+2487858376.index
+441228057.index

@@ -1,0 +1,92 @@
+package com.telusko.app.servive;
+
+
+import com.telusko.app.model.Transaction;
+import com.telusko.app.model.User;
+
+public class TransactionService implements Runnable
+{
+	Transaction trans;
+	User user;
+	long totalAmount;	
+	 public TransactionService(User user) 
+	 {
+		this.user=user;
+		
+	 }
+
+	@Override
+	public void run()
+	{
+		while(true) 
+		{			
+			int amount=trans.generateRandomAmount();
+			
+			//System.out.println("user "+user.getId()+" spent amount " +amount);
+			totalAmount+=amount;
+			
+			//System.out.println("Total points of user "+user.getId()+" : "+pointsCredit());
+			try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	public void showDetails()
+	{
+		System.out.println("user"+user.getId()+" spent total amount :"+totalAmount+" credit points:"+user.getPoints());
+	}
+	public long pointsCredit()
+	{
+		int points;
+		
+		if(totalAmount>=10_000&&totalAmount<20_000)
+		{
+			points=100;
+			user.setPoints(user.getPoints() + points);
+			
+		}
+		else if(totalAmount>=20_000&&totalAmount<30_000)
+		{
+			points=200;
+			user.setPoints(user.getPoints() + points);
+			
+		}
+		else if(totalAmount>=30_000&&totalAmount<50_000)
+		{
+			points=400;
+			user.setPoints(user.getPoints() + points);
+			
+		}
+		else if(totalAmount>=50_000)
+		{
+			points=600;
+			user.setPoints(user.getPoints() + points);
+			
+		}
+		return user.getPoints();
+	}
+	public void reward()
+	{
+		long points=pointsCredit();
+		System.out.println("user "+user.getId()+" have "+points+" points");
+		if(points>=200&&points<2000)
+		{
+			System.out.println("user" +user.getId()+" won a tshirt");
+		}
+		else if(points>=2000&&points<10_000)
+		{
+			System.out.println("user" +user.getId()+" won a headphone");
+		}
+		else if(points>=10_000)
+		{
+			System.out.println("user" +user.getId()+" won a laptop");
+		}
+		
+	}
+	
+	
+	
+}

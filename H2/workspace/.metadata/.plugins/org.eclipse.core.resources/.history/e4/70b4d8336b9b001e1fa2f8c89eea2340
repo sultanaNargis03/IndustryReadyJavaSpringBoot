@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ <hibernate-configuration>
+ <session-factory>
+ <!--   SQL dialect  to inform hibernate to generate the query specific to database engine  -->
+ <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+ 
+        <!--   To inform Hibernate about the database details  -->
+   <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+	<property name="connection.url">jdbc:mysql://localhost:3306/teluskodb
+	</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">root</property>
+	
+	<!--  optional  -->
+	
+	<property name="hibernate.show_sql">true</property>
+<!-- Inform HIBERNATE to display the query on the console it has generated 
+			internally in proper format  -->
+  <property name="hibernate.format_sql">true</property>
+  
+  <!--  Inform HIBERNATE to create/alter/drop the table  -->
+<property name="hibernate.hbm2ddl.auto">create</property>
+
+<mapping class="com.telusko.entity.Teacher2"/>
+<mapping class="com.telusko.entity.Department2"/>        
+        
+   </session-factory>     
+        
+  </hibernate-configuration>

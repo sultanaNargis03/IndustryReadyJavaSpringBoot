@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p" 
+  xmlns:c="http://www.springframework.org/schema/c" 
+  xmlns:context="http://www.springframework.org/schema/context" 
+  xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<bean id="department" class="com.telusko.beans.Department" c:depNo="4" c:depName="Education"/>
+
+  <bean id="emp" class="com.telusko.beans.Employee" p:id="1" p:name="Hyder" p:age="29" 
+  p:department-ref= "department"/>
+</beans>

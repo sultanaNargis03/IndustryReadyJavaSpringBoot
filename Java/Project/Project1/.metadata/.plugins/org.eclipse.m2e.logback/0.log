@@ -1,0 +1,85 @@
+2023-10-31 13:17:28,526 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-31 13:18:10,401 [ModalContext] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-31 13:18:10,521 [ModalContext] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-31 13:18:27,565 [sshd-JGitSshClient[5aa3cb87]-nio2-thread-5] WARN  o.e.j.i.t.s.OpenSshServerKeyDatabase - Could not update known hosts file C:\Users\NSult\ssh\known_hosts
+java.io.IOException: Creating directories for C:\Users\NSult\ssh failed
+	at org.eclipse.jgit.util.FileUtils.mkdirs(FileUtils.java:414)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:141)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lockForAppend(LockFile.java:169)
+	at org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase.updateKnownHostsFile(OpenSshServerKeyDatabase.java:329)
+	at org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase.accept(OpenSshServerKeyDatabase.java:251)
+	at org.eclipse.jgit.internal.transport.sshd.JGitServerKeyVerifier.verifyServerKey(JGitServerKeyVerifier.java:94)
+	at org.apache.sshd.client.session.AbstractClientSession.checkKeys(AbstractClientSession.java:621)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleKexMessage(AbstractSession.java:727)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:591)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:523)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:522)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1649)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:483)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:208)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2023-10-31 13:18:47,191 [sshd-JGitSshClient[2118f4e9]-nio2-thread-5] WARN  o.e.j.i.t.sshd.JGitClientSession - exceptionCaught(JGitClientSession[git@github.com/20.207.73.82:22])[state=Opened] SshException: Server key did not validate
+2023-10-31 13:18:47,194 [sshd-JGitSshClient[2118f4e9]-nio2-thread-5] INFO  o.e.j.i.t.sshd.JGitClientSession - Disconnecting(JGitClientSession[git@github.com/20.207.73.82:22]): SSH2_DISCONNECT_HOST_KEY_NOT_VERIFIABLE - Server key did not validate
+2023-10-31 13:19:03,680 [sshd-JGitSshClient[502d9228]-nio2-thread-5] WARN  o.e.j.i.t.sshd.JGitClientSession - exceptionCaught(JGitClientSession[git@github.com/20.207.73.82:22])[state=Opened] SshException: Server key did not validate
+2023-10-31 13:19:03,682 [sshd-JGitSshClient[502d9228]-nio2-thread-5] INFO  o.e.j.i.t.sshd.JGitClientSession - Disconnecting(JGitClientSession[git@github.com/20.207.73.82:22]): SSH2_DISCONNECT_HOST_KEY_NOT_VERIFIABLE - Server key did not validate
+2023-10-31 13:20:23,381 [sshd-JGitSshClient[56c39265]-nio2-thread-5] WARN  o.e.j.i.t.sshd.JGitClientSession - exceptionCaught(JGitClientSession[git@github.com/20.207.73.82:22])[state=Opened] SshException: Server key did not validate
+2023-10-31 13:20:23,382 [sshd-JGitSshClient[56c39265]-nio2-thread-5] INFO  o.e.j.i.t.sshd.JGitClientSession - Disconnecting(JGitClientSession[git@github.com/20.207.73.82:22]): SSH2_DISCONNECT_HOST_KEY_NOT_VERIFIABLE - Server key did not validate
+2023-10-31 13:31:31,792 [sshd-JGitSshClient[5e15d66c]-nio2-thread-5] WARN  o.e.j.i.t.sshd.JGitClientSession - exceptionCaught(JGitClientSession[git@github.com/20.207.73.82:22])[state=Opened] SshException: Server key did not validate
+2023-10-31 13:31:31,793 [sshd-JGitSshClient[5e15d66c]-nio2-thread-5] INFO  o.e.j.i.t.sshd.JGitClientSession - Disconnecting(JGitClientSession[git@github.com/20.207.73.82:22]): SSH2_DISCONNECT_HOST_KEY_NOT_VERIFIABLE - Server key did not validate
+2023-10-31 13:31:56,112 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-31 13:32:46,360 [ModalContext] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-31 13:32:46,493 [ModalContext] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-31 13:32:56,916 [sshd-JGitSshClient[4f402338]-nio2-thread-5] WARN  o.e.j.i.t.s.OpenSshServerKeyDatabase - Could not update known hosts file C:\Users\NSult\ssh\known_hosts
+java.io.IOException: Creating directories for C:\Users\NSult\ssh failed
+	at org.eclipse.jgit.util.FileUtils.mkdirs(FileUtils.java:414)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:141)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lockForAppend(LockFile.java:169)
+	at org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase.updateKnownHostsFile(OpenSshServerKeyDatabase.java:329)
+	at org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase.accept(OpenSshServerKeyDatabase.java:251)
+	at org.eclipse.jgit.internal.transport.sshd.JGitServerKeyVerifier.verifyServerKey(JGitServerKeyVerifier.java:94)
+	at org.apache.sshd.client.session.AbstractClientSession.checkKeys(AbstractClientSession.java:621)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleKexMessage(AbstractSession.java:727)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:591)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:523)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:522)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1649)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:483)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:208)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2023-10-31 13:33:31,710 [sshd-JGitSshClient[3a753000]-nio2-thread-5] WARN  o.e.j.i.t.sshd.JGitClientSession - exceptionCaught(JGitClientSession[git@github.com/20.207.73.82:22])[state=Opened] SshException: Server key did not validate
+2023-10-31 13:33:31,712 [sshd-JGitSshClient[3a753000]-nio2-thread-5] INFO  o.e.j.i.t.sshd.JGitClientSession - Disconnecting(JGitClientSession[git@github.com/20.207.73.82:22]): SSH2_DISCONNECT_HOST_KEY_NOT_VERIFIABLE - Server key did not validate
+2023-10-31 16:05:21,348 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-13 20:36:27,532 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-13 20:36:40,989 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-13 23:11:35,850 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-14 14:21:21,527 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-14 15:10:22,457 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-14 17:52:00,633 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-15 20:41:13,106 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-11-30 18:50:42,182 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

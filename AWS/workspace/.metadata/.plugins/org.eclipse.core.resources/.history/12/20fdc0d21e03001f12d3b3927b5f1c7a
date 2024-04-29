@@ -1,0 +1,51 @@
+package com.learning.aws.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.learning.aws.model.Employee;
+import com.learning.aws.repository.IEmployeeRepo;
+
+@Service
+public class EmployeeServiceImpl implements IEmployeeService {
+
+	@Autowired
+	IEmployeeRepo repo;
+	
+	@Override
+	public List<Employee> getAllEmployees() {
+		
+		return repo.findAll();
+	}
+
+	@Override
+	public Employee getEmployeeById(Integer id) {
+		
+		return repo.findById(id).get();
+	}
+
+	@Override
+	public String addEmployee(Employee employee) {
+		
+		Employee emp=repo.save(employee);
+		return "Employee added succcessfully with id: "+emp.getId();
+	}
+
+	@Override
+	public String updateEmployee(Employee employee) {
+		Employee emp=repo.save(employee);
+		return "Employee details updated succcessfully";
+	}
+
+	@Override
+	public String deleteEmployee(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+
+}

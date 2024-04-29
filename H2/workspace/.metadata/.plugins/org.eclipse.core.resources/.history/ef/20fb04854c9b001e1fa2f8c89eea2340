@@ -1,0 +1,21 @@
+package com.telusko.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import org.hibernate.mapping.Set;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class Job 
+{
+	@Id
+	private Integer id;
+	private String title;
+	private String role;
+	private String tech;
+	
+	private Set<Employee2> employees;
+}

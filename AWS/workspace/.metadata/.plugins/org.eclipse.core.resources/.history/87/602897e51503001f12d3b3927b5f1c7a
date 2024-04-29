@@ -1,0 +1,6 @@
+spring.application.name=EmployeeManagementApp
+spring.datasource.jdbc-url=jdbc:postgresql://localhost:5432/teluskodb
+spring.datasource.username=postgres
+spring.datasource.password=root123
+
+spring.datasource.driver-class-name=org.postgresql.Driver

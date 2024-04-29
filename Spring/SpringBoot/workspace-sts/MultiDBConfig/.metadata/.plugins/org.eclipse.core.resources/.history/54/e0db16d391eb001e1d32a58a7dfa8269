@@ -1,0 +1,14 @@
+spring.application.name=SpringBootMultiDB
+
+server.port=8444
+
+##Datasource Configuration
+db1.datasource.url=jdbc:mysql:///teluskodb
+db1.datasource.username=root
+db1.datasource.password=root
+
+db2.datasource.url=jdbc:postgresql://localhost:5432/teluskodb
+db2.datasource.username=postgres
+db2.datasource.password=root123
+
+

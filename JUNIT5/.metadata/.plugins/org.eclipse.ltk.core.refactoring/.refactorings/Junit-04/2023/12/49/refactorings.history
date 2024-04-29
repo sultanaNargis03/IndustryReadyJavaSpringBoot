@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.junit5.Shapes.java&apos; to &apos;ShapesTest.java&apos;&#x0D;&#x0A;- Original project: &apos;Junit-04&apos;&#x0D;&#x0A;- Original element: &apos;com.junit5.Shapes.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.junit5.ShapesTest.java&apos;" description="Rename compilation unit &apos;Shapes.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/test&lt;com.junit5{Shapes.java" name="ShapesTest.java" references="false" stamp="1701786554429" version="1.0"/>
+</session>

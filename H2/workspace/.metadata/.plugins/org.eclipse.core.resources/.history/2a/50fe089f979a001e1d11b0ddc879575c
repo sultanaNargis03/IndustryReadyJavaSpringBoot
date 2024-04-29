@@ -1,0 +1,9 @@
+package com.telusko.util;
+
+public class HibernateUtil 
+{
+	static
+	{
+		new Cnfiguration().
+	}
+}

@@ -1,0 +1,6 @@
+package com.learning.dao;
+
+public class JunitCourse implements Course 
+{
+
+}

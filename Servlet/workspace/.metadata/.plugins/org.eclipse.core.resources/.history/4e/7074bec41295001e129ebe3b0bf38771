@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Landing page</title>
+</head>
+<body bgcolor="dark green">
+<h1><marquee>Welcome to our App</marquee></h1>
+<a href='register.html'>First Time User? SignUp here</a><br/><br/><br/>
+<a href='login.html'>Registered with us? Login here</ahref='register.html'>
+</body>
+</html>

@@ -1,0 +1,52 @@
+package com.telusko.app.servive;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.telusko.app.model.User;
+import com.telusko.app.servive.impl.UserServiceInterface;
+
+public class UserService implements UserServiceInterface
+{
+	List<User> user;
+	Map<String, List<String>> rewards;
+	public UserService(List<User> user, Map<String, List<String>> rewards) 
+	{
+		this.user=user;
+		this.rewards=rewards;
+	}
+
+	@Override
+	public User login(int id, String pwd) 
+	{
+		User currentUser = null;
+		for(User u:user)
+		{
+			if(u.getId().equals(id)&&u.getPassword().equals(pwd))
+			{
+				
+					//System.out.println(u.getName()+" Total credit points : "+u.getPoints());
+				 currentUser=u;					
+			}
+		}
+		
+		return currentUser;
+		
+	}
+
+	@Override
+	public void showCreditPoints(User currentUser) 
+	{
+		
+		System.out.println("Total credit points earned by "+currentUser.getName()+" : "+currentUser.getPoints());
+	}
+
+	@Override
+	public void redemRewards(String reward) 
+	{
+		
+		
+	}
+	
+}

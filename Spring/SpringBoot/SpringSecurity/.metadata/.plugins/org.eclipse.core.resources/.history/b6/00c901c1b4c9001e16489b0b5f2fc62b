@@ -1,0 +1,7 @@
+package com.telusko.springsecdemo.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepo extends JpaRepository<T, ID> {
+
+}

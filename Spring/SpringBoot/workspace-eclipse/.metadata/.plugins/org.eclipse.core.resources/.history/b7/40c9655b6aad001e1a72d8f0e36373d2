@@ -1,0 +1,21 @@
+package com.telusko.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class CourseSelection 
+{
+	@Autowired
+	private Course course;
+	
+	public CourseSelection() 
+	{
+		System.out.println("CourseSelection objct created");
+	}
+
+	public boolean chooseCourse(double amount)
+	{
+		return course.selectCourse(amount);
+	}
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.item.file.FlatFileItemReader"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.core.repository.JobRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.core.Step"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.core.step.builder.StepBuilder"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.item.file.mapping.DefaultLineMapper"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.item.file.transform.DelimitedLineTokenizer"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.item.ItemProcessor"/>
+    <fullyQualifiedTypeName name="com.telusko.binding.Customer"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.item.data.RepositoryItemWriter"/>
+    <fullyQualifiedTypeName name="com.telusko.repo.CustomerRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.core.job.builder.JobBuilder"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.core.launch.JobLauncher"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.core.Job"/>
+    <fullyQualifiedTypeName name="org.springframework.batch.core.JobParametersBuilder"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+</qualifiedTypeNameHistroy>

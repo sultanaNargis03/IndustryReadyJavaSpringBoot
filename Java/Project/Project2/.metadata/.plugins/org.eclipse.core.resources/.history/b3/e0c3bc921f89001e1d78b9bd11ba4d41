@@ -1,0 +1,37 @@
+package com.telusko.app.servive;
+
+import java.util.List;
+
+import com.telusko.app.model.User;
+import com.telusko.app.servive.impl.UserServiceInterface;
+
+public class UserService implements UserServiceInterface
+{
+
+	List<User> user;
+	@Override
+	public void login( int id, String pwd) 
+	{
+		for(User u:user)
+		{
+			if(u.getId().equals(id))
+			{
+				
+			}
+		}
+		
+	}
+
+	@Override
+	public void CreditPoints() 
+	{
+		
+	}
+
+	@Override
+	public void redemRewards() 
+	{
+			
+	}
+	
+}

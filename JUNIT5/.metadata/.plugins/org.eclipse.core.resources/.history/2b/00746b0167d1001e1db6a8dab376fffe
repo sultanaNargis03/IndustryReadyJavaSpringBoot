@@ -1,0 +1,5 @@
+package com.learning.dao;
+
+public interface SpringBoot extends Course {
+
+}

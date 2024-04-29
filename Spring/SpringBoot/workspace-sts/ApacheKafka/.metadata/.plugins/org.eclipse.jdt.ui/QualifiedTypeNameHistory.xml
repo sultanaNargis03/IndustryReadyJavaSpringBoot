@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.kafka.support.serializer.JsonSerializer"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="com.telusko.service.KafkaService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.kafka.core.ProducerFactory"/>
+    <fullyQualifiedTypeName name="com.telusko.model.Customer"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="org.apache.kafka.clients.producer.ProducerConfig"/>
+    <fullyQualifiedTypeName name="org.apache.kafka.common.serialization.StringSerializer"/>
+    <fullyQualifiedTypeName name="com.telusko.util.AppConstants"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.JsonSerializer"/>
+    <fullyQualifiedTypeName name="org.springframework.kafka.core.DefaultKafkaProducerFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.kafka.core.KafkaTemplate"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+</qualifiedTypeNameHistroy>

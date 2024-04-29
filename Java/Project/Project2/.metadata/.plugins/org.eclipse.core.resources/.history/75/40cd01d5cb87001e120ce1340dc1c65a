@@ -1,0 +1,32 @@
+class UserService implements UserOperations {
+    private List<User> users;
+
+    public UserService(List<User> users) {
+        this.users = users;
+    }
+
+    @Override
+    public User login(String username, String password) {
+        for (User user : users) {
+            if (user.getName().equalsIgnoreCase(username) && user.getPassword().equals(password)) {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void displayCreditScore(User user) {
+        System.out.println("Your credit score: " + user.getCreditPoints() + " points.");
+    }
+
+    @Override
+    public void redeemReward(User user) {
+        if (user.getCreditPoints() >= 200000) {
+            System.out.println(user.getName() + " is redeeming a headphone as a reward!");
+            user.setCreditPoints(user.getCreditPoints() - 200000);
+        } else {
+            System.out.println(user.getName() + " does not have enough points to redeem a reward.");
+        }
+    }
+}

@@ -1,0 +1,9 @@
+
+public interface UserOperations 
+{
+	User login(String username, String password);
+
+    void displayCreditScore(User user);
+
+    void redeemReward(User user);
+}

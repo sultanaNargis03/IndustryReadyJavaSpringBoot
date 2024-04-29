@@ -1,0 +1,21 @@
+package sorting;
+
+public class LaunchSort1 {
+
+	public static void main(String[] args) 
+	{
+		int arr[]= {5,2,9,8,3,7};
+		
+		System.out.println("before sorting");
+
+		for(int num:arr)
+			System.out.print(num+" ");
+		
+	
+		System.out.println("\nAfter sorting");
+		
+		for(int num:arr)
+			System.out.print(num+" ");
+	}
+
+}

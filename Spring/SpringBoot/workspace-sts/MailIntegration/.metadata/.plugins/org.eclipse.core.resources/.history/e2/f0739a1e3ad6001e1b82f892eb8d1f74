@@ -1,0 +1,22 @@
+package com.telusko.service;
+
+import java.util.Arrays;
+
+public class PurchaseOrderImpl implements IPurchaseOrder 
+{
+
+	@Override
+	public String purchase(String[] items, Double[] prices, String[] toEmail) throws Exception 
+	{
+		double amount=0.0;
+		for(double price:prices)
+		{
+			amount=amount+price;
+		}
+		String message="Hello! "+Arrays.toString(items)+" with price "+Arrays.toString(prices)+" which is costing total of "+amount
+				+" Bill Attached for refference";
+		
+		return "Mail sent! kindly check";
+	}
+
+}

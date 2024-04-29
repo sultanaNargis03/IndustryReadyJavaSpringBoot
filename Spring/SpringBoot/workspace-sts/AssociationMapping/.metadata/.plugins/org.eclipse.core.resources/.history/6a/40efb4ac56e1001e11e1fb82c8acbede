@@ -1,0 +1,11 @@
+package com.telusko.model;
+
+public class Person 
+{
+
+	public Phone() 
+	{
+		
+	}
+
+}

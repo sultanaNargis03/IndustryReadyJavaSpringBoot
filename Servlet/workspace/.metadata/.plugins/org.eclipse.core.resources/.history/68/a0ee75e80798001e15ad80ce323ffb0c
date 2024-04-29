@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Login success</title>
+	</head>
+	
+	<body background="https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg">
+		<h2 style="color: red"><marquee>Successfully Logged in!</marquee></h2>
+		<h2>Hi ${dbuser},Welcome to our app</h2>	
+		<a href="course">view course</a>
+	</body>
+	
+</html>

@@ -1,0 +1,34 @@
+package com.telusko.main;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.telusko.entity.Student;
+
+public class LaunchAppLazy {
+
+	public static void main(String[] args) 
+	{
+		//Inform jvm to activate hibernate
+				Configuration config = new Configuration(); 
+				config.configure("/hibernate.config.xml");
+				
+				//creating SessionFactory to hold all others req. objects for hibernate
+				SessionFactory sessionFactory=config.buildSessionFactory();
+				
+				//Persistence operation
+				Session session = sessionFactory.openSession();
+				//Only for non select operation transaction must be there
+				
+				Student st=session.load(Student.class,1);
+				System.out.println("Id :"+st.getId());
+//				System.in.read();
+//				Student st1=session.get(Student.class,1);
+//				System.out.println(st1);
+				session.close();
+				sessionFactory.close();
+				
+	}
+
+}

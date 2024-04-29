@@ -1,0 +1,12 @@
+
+import java.sql.*;
+public class LaunchJDBC1 {
+
+	public static void main(String[] args) throws ClassNotFoundException 
+	{
+		
+		//load and register the driver
+		Class.forName("com.mysql.cj.jdbc.driver");
+	}
+
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fail to register</title>
+</head>
+<body bgcolor="black">
+<h2>Registration failed!! Want to try again?</h2>
+<a href='register.html'>Click here to try again </a>
+</bodystyle="align-content: center">
+</html>

@@ -1,0 +1,11 @@
+package com.telusko.services;
+
+public class Microservices implements Courses {
+
+	@Override
+	public boolean registerToCourse(Double cost) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

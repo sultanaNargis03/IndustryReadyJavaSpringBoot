@@ -1,0 +1,28 @@
+package com.telusko.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class KafkaPubConfig 
+{
+	@Bean
+	public ProducerFactory<String, Customer> producerFactory() {
+
+		Map<String, Object> configProps = new HashMap<String, Object>();
+
+		configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, AppConstants.HOST_URL);
+		System.out.println("URL is fine");
+		configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+		configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
+		System.out.println("Json data adding in ProducerFactpry is fine");
+
+		return new DefaultKafkaProducerFactory<>(configProps);
+	}
+	
+	@Bean(name = "kafkaTemplate")
+	public KafkaTemplate<String, Customer> kafkaTemplate() {
+		System.out.println("Customized KafkaTemplate");
+		return new KafkaTemplate<>(producerFactory());
+	}
+
+}

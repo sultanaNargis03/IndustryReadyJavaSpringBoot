@@ -1,0 +1,34 @@
+package com.telusko.jdbc.main;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import com.telusko.jdbc.util.JdbcUtility;
+
+public class LaunchJDBCInsert {
+
+	public static void main(String[] args) 
+	{
+
+		Connection connect=null;
+		PreparedStatement stmt=null;
+		Scanner sc=null;
+		
+		try {
+			connect=JdbcUtility.getDBConnection();
+		}
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				
+
+	}
+
+}

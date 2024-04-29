@@ -1,0 +1,26 @@
+package com.learning.aws.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.learning.aws.model.Employee;
+import com.learning.aws.service.EmployeeServiceImpl;
+
+@RestController
+public class EmployeeController {
+	@Autowired
+	private EmployeeServiceImpl service;
+
+	@GetMapping("/Employees")
+	public ResponseEntity<List<Employee>> getAllEmployees()
+	{
+		
+		return ResponseEntity(service.getAllEmployees(),HttpStatus.OK);
+	}
+
+}

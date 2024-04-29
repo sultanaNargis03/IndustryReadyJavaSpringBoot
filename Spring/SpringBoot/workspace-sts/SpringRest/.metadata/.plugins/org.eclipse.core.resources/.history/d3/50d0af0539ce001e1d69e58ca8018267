@@ -1,0 +1,52 @@
+package com.telusko.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.telusko.request.Student;
+import com.telusko.response.RegCard;
+import com.telusko.service.RegAdmitServiceImpl;
+
+@Controller
+public class RegistrationController 
+{
+	@Autowired
+	RegAdmitServiceImpl service;
+	
+	@PostMapping("/register")
+	public String registerStudent(@ModelAttribute Student student,Model model)
+	{
+		RegCard regcard = service.registerStudents(student);
+		model.addAttribute("regNum", "Registration number is: "+regcard.getRegNum());
+		System.out.println(regcard);
+		return "home";
+	}
+	
+	@GetMapping("/form")
+	public String getHomePage(Model model)
+	{
+		model.addAttribute("student",new Student());
+		return "home";
+	}
+	@GetMapping("/regcard")
+	public String getRegistrationForm(Model model)
+	{
+		model.addAttribute("regcard", new RegCard());
+		
+		return "regcard";
+	}
+	@GetMapping("/get-regcard")
+	public String getRegistrationForm(@RequestParam("registrationNum") Integer registrationNum,Model model)
+	{
+		RegCard regcard=service.fetchRegistrationCardInfo(registrationNum);
+		model.addAttribute("regcard",regcard );
+		
+		return "regcard";
+	}
+}

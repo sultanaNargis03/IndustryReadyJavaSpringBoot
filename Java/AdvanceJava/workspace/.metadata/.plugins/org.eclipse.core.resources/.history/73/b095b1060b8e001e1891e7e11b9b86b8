@@ -1,0 +1,37 @@
+package com.telusko.jdbc.main;
+import java.sql.*;
+
+import com.telusko.jdbc.util.JdbcUtility;
+public class LaunchJDBCAll
+{
+
+	public static void main(String[] args) 
+	{
+		
+		//Resource 
+		Connection connect=null;
+		Statement stmt=null;
+		ResultSet rs=null;
+		
+		try
+		{
+			connect=JdbcUtility.getDBConnection();
+			if(connect!=null)
+				connect.createStatement();
+		}
+		catch(SQLException e)
+		{
+			
+		}
+		catch(Exception e)
+		{
+			
+		}
+		finally
+		{
+			
+		}
+		
+	}
+
+}

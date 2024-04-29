@@ -1,0 +1,18 @@
+package com.telusko.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class StudentDaoImpl implements IStudentDao 
+{
+	@Autowired
+	private JdbcTemplate jdbc;
+
+	@Override
+	public StudentTableBo getStudentById(int id) 
+	{
+		jdbc.queryForObject(sql, rowMapper,id);
+		return null;
+	}
+
+}

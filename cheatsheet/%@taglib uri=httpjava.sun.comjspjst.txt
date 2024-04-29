@@ -1,0 +1,9 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!-- https://mvnrepository.com/artifact/org.glassfish.web/jakarta.servlet.jsp.jstl -->//loop
+		<dependency>
+		    <groupId>org.glassfish.web</groupId>
+		    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+		    <version>2.0.0</version>
+		</dependency>

@@ -1,0 +1,7 @@
+package com.learning.aws.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IEmployeeRepo extends JpaRepository<Employee, Integer> {
+
+}

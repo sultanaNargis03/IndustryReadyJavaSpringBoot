@@ -1,0 +1,107 @@
+import java.util.List;
+
+interface UserOperations {
+    User login(String username, String password);
+
+    void displayCreditScore(User user);
+
+    void redeemReward(User user);
+}
+
+interface TransactionOperations {
+    void generateRandomTransaction();
+}
+
+class UserService implements UserOperations {
+    private List<User> users;
+
+    public UserService(List<User> users) {
+        this.users = users;
+    }
+
+    @Override
+    public User login(String username, String password) {
+        for (User user : users) {
+            if (user.getName().equalsIgnoreCase(username) && user.getPassword().equals(password)) {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void displayCreditScore(User user) {
+        System.out.println("Your credit score: " + user.getCreditPoints() + " points.");
+    }
+
+    @Override
+    public void redeemReward(User user) {
+        if (user.getCreditPoints() >= 200000) {
+            System.out.println(user.getName() + " is redeeming a headphone as a reward!");
+            user.setCreditPoints(user.getCreditPoints() - 200000);
+        } else {
+            System.out.println(user.getName() + " does not have enough points to redeem a reward.");
+        }
+    }
+}
+
+class TransactionService implements TransactionOperations {
+    private List<User> users;
+
+    public TransactionService(List<User> users) {
+        this.users = users;
+    }
+
+    @Override
+    public void generateRandomTransaction() {
+        java.util.Random random = new java.util.Random();
+        int randomUserId = random.nextInt(users.size());
+        int randomAmount = random.nextInt(30000) + 10000; // Random amount between 10000 and 40000
+        Transaction transaction = new Transaction(randomAmount, users.get(randomUserId));
+        transaction.processTransaction();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        List<User> users = new java.util.ArrayList<>();
+        users.add(new User(1, "User1", "password1"));
+        users.add(new User(2, "User2", "password2"));
+        users.add(new User(3, "User3", "password3"));
+        users.add(new User(4, "User4", "password4"));
+        users.add(new User(5, "User5", "password5"));
+
+        UserOperations userService = new UserService(users);
+        TransactionOperations transactionService = new TransactionService(users);
+
+        java.util.Timer timer = new java.util.Timer();
+        timer.scheduleAtFixedRate(new java.util.TimerTask() {
+            @Override
+            public void run() {
+                transactionService.generateRandomTransaction();
+            }
+        }, 10000, 10000);
+
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+
+        User currentUser = userService.login(username, password);
+        if (currentUser != null) {
+            System.out.println("Login successful.");
+            userService.displayCreditScore(currentUser);
+
+            System.out.print("Do you want to redeem your reward? (yes/no): ");
+            String redeemChoice = scanner.nextLine();
+            if ("yes".equalsIgnoreCase(redeemChoice)) {
+                userService.redeemReward(currentUser);
+            }
+        } else {
+            System.out.println("Login failed. Invalid username or password.");
+        }
+
+        scanner.close();
+    }
+}

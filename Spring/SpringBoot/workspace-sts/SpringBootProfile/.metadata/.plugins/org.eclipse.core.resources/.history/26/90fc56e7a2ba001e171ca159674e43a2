@@ -1,0 +1,11 @@
+package com.telusko.services;
+
+public class Mockito implements Courses{
+
+	@Override
+	public boolean registerToCourse(Double cost) {
+		System.out.println("Mockito course registered amount paid "+cost);
+		return true;
+	}
+
+}

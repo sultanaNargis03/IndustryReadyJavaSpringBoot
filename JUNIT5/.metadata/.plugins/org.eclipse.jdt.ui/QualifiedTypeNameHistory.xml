@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.junit5.Shapes"/>
+    <fullyQualifiedTypeName name="com.teusko.learning.ReverseString"/>
+    <fullyQualifiedTypeName name="java.awt.Shape"/>
+    <fullyQualifiedTypeName name="com.learning.dao.Course"/>
+    <fullyQualifiedTypeName name="com.learning.service.PurchaseCourse"/>
+    <fullyQualifiedTypeName name="com.learning.dao.JavaCourse"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestInstance"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestInstance.Lifecycle"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+</qualifiedTypeNameHistroy>

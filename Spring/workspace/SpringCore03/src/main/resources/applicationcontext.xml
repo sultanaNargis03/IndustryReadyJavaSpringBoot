@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+  
+	  <bean id="emp1" class="com.telusko.bean.Employee"> 
+	  <constructor-arg value="01"/>
+	  <constructor-arg value="Nargis"></constructor-arg>
+	  <constructor-arg value="kolkata"></constructor-arg>
+	  <constructor-arg value="100000.78f"></constructor-arg>
+	  </bean> 
+	  
+	  <bean id="emp2" class="com.telusko.bean.Employee"> 
+	  <constructor-arg index="2" value="kolkata"></constructor-arg>
+	  <constructor-arg index="0" value="02"/>
+	  <constructor-arg index="3" value="100000.78f"></constructor-arg>
+	  <constructor-arg index="1" value="Tamim"></constructor-arg>
+	  </bean>
+	  
+	  <bean id="emp3" class="com.telusko.bean.Employee"> 
+	  <constructor-arg name="empCity" value="kolkata"></constructor-arg>
+	  <constructor-arg name="id" value="03"/>
+	  <constructor-arg name="empSalary" value="100000.78f"></constructor-arg>
+	  <constructor-arg name="empName" value="Tamim2"></constructor-arg>
+	  </bean> 
+	  <bean id="emp4" class="com.telusko.bean.Employee"> 
+	  <constructor-arg type="java.lang.String" value="kolkata"></constructor-arg>
+	  <constructor-arg type="java.lang.Integer" value="04"/>
+	  <constructor-arg type="java.lang.Float" value="100000.78f"></constructor-arg>
+	  <constructor-arg type="java.lang.String" value="Tamim4"></constructor-arg>
+	  </bean> 
+</beans>

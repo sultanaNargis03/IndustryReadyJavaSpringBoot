@@ -1,0 +1,30 @@
+Rewards Application
+
+5 users - Array/collection
+
+
+User objects - id, name, password (cryptic), points, array of giftCards 
+
+Thread - 10 secs, create a new random transaction, for random user, random amount (1000 - 20000)
+Transaction
+
+user1 - 10000 rs - 100 points
+user1 - 20000 rs - 200 points
+user1 - 5000 points
+
+
+
+reward1 (headphones) - 2000 points (2,00,000 rs)
+reward2 (travel - 1000 kms) - 10000 points 
+reward3 (tshirt) - 200 points
+
+
+User - 
+redem points.
+
+categories (electronics, travel, merch)
+- elec
+- headphones, phone, laptop, ....
+- headphones 
+- Amazon coupon,  makemytrip gift card
+- user points - 2000 points

@@ -1,0 +1,20 @@
+package com.telusko.runner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+import com.telusko.service.PersonInfoMangementServiceImpl;
+
+public class AssociationMappingRunner implements CommandLineRunner {
+
+	@Autowired
+	private PersonInfoMangementServiceImpl service;
+	
+	@Override
+	public void run(String... args) throws Exception 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

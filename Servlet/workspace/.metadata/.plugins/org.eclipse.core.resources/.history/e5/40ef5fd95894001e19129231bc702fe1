@@ -1,0 +1,35 @@
+package com.StudentPortal.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.StudentPortal.model.Model;
+
+@WebServlet("/login")
+public class Login extends HttpServlet 
+{
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+	{
+		
+		String userName=request.getParameter("uname");
+		
+		String password=request.getParameter("password");
+		
+			Model model=new  Model();
+			model.setUserName(userName);
+			model.setPassword(password);
+			int row=model.login();
+			if(row!=0)
+			{
+				response.sendRedirect("/MVCProject/register.html");
+			}
+		}
+		
+	}
+
+}

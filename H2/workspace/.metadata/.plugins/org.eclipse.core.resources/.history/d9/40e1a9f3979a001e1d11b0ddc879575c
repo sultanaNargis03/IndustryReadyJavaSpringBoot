@@ -1,0 +1,11 @@
+package com.telusko.util;
+
+import org.hibernate.cfg.Configuration;
+
+public class HibernateUtil 
+{
+	static
+	{
+		new Configuration().configure().buildSessionFactory();
+	}
+}

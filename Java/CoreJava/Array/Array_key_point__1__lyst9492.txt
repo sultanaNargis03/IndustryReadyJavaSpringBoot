@@ -1,0 +1,26 @@
+Array is an indexed based Data structure to store large volume of homogenius(Similar) type of data.
+
+In Java, array is treated as an Object.Hence memory is allocated on Heap area.
+
+DataType []arrayName=new Datatype[size];
+
+To get the length of an array in Java we use length property --> arrayName.length   (It's not a method) 
+
+In Java Array are guarded with boundaries. Howmuch ever array index locations we have asked while creating am array only that many indexes we can use. If we try to surpass the index of array beyond we have asked while creating then it will lead to ArrayIndexOutOfBoundsException.
+
+We cannot give size of an array as negative--> NegativeArraySizeException
+
+size of an array must be of int type;
+
+(refer programs and videos discussed on this topic to get more insights)
+
+Major limitation of array in Java:
+
+It can store only homogenius(Same) type of data.
+
+It demands Contigious memory locations.
+
+Size is fixed, It cannot grow or shrink in size. If we try to change the size of an array after array declaration then new array Object will be created and old array object will neither grow or shrink.
+
+We donot have any direct class to work with data or array elements. Though we have an utility class available (Arrays)
+

@@ -1,0 +1,6 @@
+package com.telusko.beans;
+
+public enum CourseSelection 
+{
+
+}

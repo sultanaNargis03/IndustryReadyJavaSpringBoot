@@ -1,0 +1,60 @@
+package com.StudentPortal.controller;
+
+import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.StudentPortal.model.CourseModel;
+import com.StudentPortal.model.Model;
+
+@WebServlet("/course")
+public class Course extends HttpServlet 
+{
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+
+		System.out.println("inside course");
+		CourseModel cmodel=new CourseModel();
+		
+		
+		
+		ResultSet rs=cmodel.readCourse();
+		
+		try {
+			while(rs.next())
+			{
+				request.setAttribute("cmodel",cmodel);
+				RequestDispatcher rd=request.getRequestDispatcher("course.jsp");
+				rd.forward(request, response);
+//				cmodel.setId(rs.getInt("id"));
+//				int id=cmodel.getId();
+//				
+//				request.setAttribute("id",id);
+//				RequestDispatcher rd=request.getRequestDispatcher("course.jsp");
+//				rd.forward(request, response);
+//				cmodel.setCourseName(rs.getString("coursename"));
+//				String courseName=cmodel.getCourseName();
+//				cmodel.setPrice(rs.getDouble("price"));
+//				double price=cmodel.getPrice();
+//				cmodel.setInstructor(rs.getString("instructor"));
+//				String instructor=cmodel.getInstructor();
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+		
+	}
+
+}

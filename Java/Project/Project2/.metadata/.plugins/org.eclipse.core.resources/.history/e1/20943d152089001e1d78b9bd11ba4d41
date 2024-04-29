@@ -1,0 +1,48 @@
+package com.telusko.app.servive;
+
+import java.util.List;
+
+import com.telusko.app.model.User;
+import com.telusko.app.servive.impl.UserServiceInterface;
+
+public class UserService implements UserServiceInterface
+{
+
+	List<User> user;
+	@Override
+	public boolean login( int id, String pwd) 
+	{
+		boolean bool=false;
+		for(User u:user)
+		{
+			if(u.getId().equals(id))
+			{
+				bool=true;
+				System.out.println("id "+u.getId()+" found");
+				if(u.getPassword().equals(pwd))
+				{
+					System.out.println("Password matched");
+				}
+				else
+				{
+					bool=false;
+				}
+					
+			}
+		}
+		
+	}
+
+	@Override
+	public void CreditPoints() 
+	{
+		
+	}
+
+	@Override
+	public void redemRewards() 
+	{
+			
+	}
+	
+}

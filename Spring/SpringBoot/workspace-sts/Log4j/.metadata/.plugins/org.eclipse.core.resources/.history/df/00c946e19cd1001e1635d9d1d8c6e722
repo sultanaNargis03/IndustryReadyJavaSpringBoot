@@ -1,0 +1,10 @@
+package com.telusko.log4j;
+
+public class LaunchDemo 
+{
+	public void service()
+	{
+		//bu logic
+		//logic to store in db
+	}
+}

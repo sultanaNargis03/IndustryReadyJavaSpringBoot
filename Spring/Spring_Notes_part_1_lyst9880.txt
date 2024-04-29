@@ -1,0 +1,176 @@
+Learning Java development is about: 
+
+a. Java Language(Core Java)
+
+b. Java Technology(JDBC,Servlet,JSP,JSTL,EJB's,....)
+EJB-> Enterprise Java Bean
+
+c. Framework(Hibernate,Spring,SpringBoot,MicroServices,RestApi's,....)
+
+
+==>Framework is not a new technology, rather it is an abstraction provided on top of technology.
+
+==>Thirdparty team would give apis in the form of jars which would generate boiler plate code based on the inputs we give to the internal containers of the framework.
+
+==> It simplifies development and makes the process easy and simple.
+
+eg: hibernate -----> based on configuration details supplied, it will create JDBC environment.
+
+ Spring -----> based on configuration details supplied, it will create an object and maintains the object and 
+ peforms dependancy injection.
+
+
+Different types of Framework to build application
+=================================================
+a. Web application based framework
+b. ORM Framework
+c. Application Framework
+d. BigData Framework
+e. Distrubuted Application Development framework
+etc....
+
+Webapplication Framework
+========================
+ These frameworks provides abstraction on top of Servlet,JSP and simplifies MVC 
+architecture based development.
+M=> Model
+V=> View
+C=> Controller
+eg: Struts(Apache foundation)
+ SpringMVC(Part of Spring)----> interface21(pivotal team)
+ JSF(Java Server Faces) -----> from SUNMS/OracleCorporation
+ WebWork -------> symphony
+
+ORM Framework
+=============
+These frameworks provides abstraction on top of JDBC and simplifies to develop object based DBS/w independent persitence logic
+
+eg: Hibernate ------> redhat
+ TopLink ------> oracle
+ Ibatis ------> apache
+
+Application Framework
+====================
+ It is an allrounder framework that provides abstraction on top of mulitple jee technologies and even on some frameworks to develop all kinds of logic and different type of app's.
+
+eg: Distrubuted application
+ eg:myntra application
+ flipkart application
+ amazon application....
+
+eg: facebook application(webapplications)
+
+ Example for application framework: Spring,SpringBoot
+
+Based on the mode of development we do, we have 2 types of framework
+a. Invasive Framework
+b. Non-Invasive Framework
+Invasive Framework
+=================
+ => Devleoper class will extend or implement an interface given by framework api.
+ => Because of exends and implements the devloper code would be tightly coupled with framework api.
+ => It won't promote portablity(moving the classes to new framework would not execute).
+
+eg: Servlet,Struts(1.X)
+Note: working for a company with a bond.
+
+Non-Invasive Framework
+======================
+=> Devloper class will not extend or implement any interface given by framework api.
+=> No exends and implements keyword, the devloper code would be loosely coupled with framework api.
+=> It promotes portablity(moving the classes to new framework would execute).
+eg: Spring,Hibernate,......
+ Note: working for a company wihthout a bond.
+
+Important key features ::
+======================
+Spring makes it easier to develop Java applications by providing a set of tools and best practices.
+
+Spring can be used to develop end to end backend of an application.
+
+Spring is Non-Invasive Framework.
+
+Sppring is versatile(It integrates easily with other technologies and frameworks, such as Hibernate and JPA for data access.)
+
+Spring manages how objects are created and used, reducing the complexity of your code.
+
+Spring allows you to inject (pass) dependencies into your classes, making your code flexible and testable.
+
+Spring is organized into modules (like Spring MVC for web and Spring Data for data access), so you can use what you need.
+
+Spring-Core module is Base of all modules.
+
+Summary : Spring is a framework that simplifies Java development by managing object creation, dependencies, and concerns. It offers a modular, flexible, and easy-to-test approach for building a wide range of applications
+
+
+SpringCore
+==========
+ => It is base module for other modules.
+ => This module is given to supply Spring containers to perform Dependancy management.
+ => This module gives 2 spring containers/IOC[Inversion Of Control] containers called
+	a. BeanFactory Container
+	b. ApplicationContext Container(Latest one)
+
+ => These 2 containers perform the following operations
+	a. It manages the SpringBean/Object life cycle
+	b. It performs Dependancy Management
+		==> Depedancy Injection[commonly used]
+
+
+SpringApp can be developed in following approaches
+
+a. XML approach(only used in maintainence project).
+b. using Annotation driven configuration(XML + Java).
+c. using java code configuration.(no XML)
+
+d. using Spring boot autodriven configuration.[supported by SpringBoot]
+
+Common modes of DependancyInjection
+=====================================
+1. Setter Injection.
+2. Constructor injection.
+3. Field injection.
+
+What is SpringBean?
+
+ Any Java class(PreDefined/userDefined/ThirdParty api) whose object is created and managed by Spring container is called "SpringBean".
+
+
+Dependancy Management
+=====================
+ => It is the process of assigning dependant object to Target object by loading both the classes and by creating the objects for both the classes.
+
+ => The classes/objects which uses the other class services is called "Target class".
+
+ => The classes that acts like helper class to main/target class is called "Dependant class".
+
+1. Setter Injection.
+=> It is the process of assigning dependant object to Target object by loading both the classes and by creating the objects for both the classes and injecting 
+the Dependent object to Target Object using Setter is called "Setter Injection".
+
+
+Container work flow
+-------------------
+1. BeanFactory container ========> XmlBeanFactory(Depercated from Spring3.1V)
+2. BeanFactory container ========> DefaultListableBeanFactory(C)
+Limitations of XmlBeanFactory
+=============================
+1. Need of Resource object to hold the name and location of Spring bean 
+configuration file.
+2. XmlBeanFactory uses XmlParser to read the bean defnition and to process the xml 
+file which is not good in terms of performance.
+3. Doesn't allow to take multiple xml files at a time as spring bean configuration 
+file.
+Advantages of DefaultListableBeanFactory
+========================================
+1. It directly recoginizes the beans,without passing this work to another class.
+2. Allows to take multiple xml files at a time becoz loadDefnition(String... args) 
+argument is of var-args.
+3. No need of taking Resource object to hold the name and location of spring bean 
+configuration file.
+4. The performance towards reading and processing xml file is good.
+
+
+
+
+

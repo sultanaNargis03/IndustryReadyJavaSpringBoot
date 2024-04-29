@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DynamicRegistrationJdbc&apos; to &apos;RegistrationJdbc&apos;" description="Rename resource &apos;DynamicRegistrationJdbc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/DynamicRegistrationJdbc" name="RegistrationJdbc" stamp="1701437676968" updateReferences="true"/>
+</session>

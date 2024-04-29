@@ -1,0 +1,21 @@
+package com.jdbc;
+import java.sql.*;
+public class LaunchJDBC1 {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException 
+	{
+		
+		//load and register the driver
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		//Establish the connection
+		String url="";
+		String userName="root";
+		String password="root";
+		Connection connect=DriverManager.getConnection(url, userName, password);
+	
+	
+	}
+	
+
+}

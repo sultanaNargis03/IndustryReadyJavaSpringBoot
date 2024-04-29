@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=AssociationMappingDataJpa/C:\/Users\/NSult\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.2.3\/spring-data-jpa-3.2.3.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.2.3=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1708089150000"/>
+    <typeInfo handle="=AssociationMappingDataJpa/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.telusko.service{IPersonalInfoManagementService.java[IPersonalInfoManagementService" modifiers="513" timestamp="1710348419620"/>
+    <typeInfo handle="=AssociationMappingDataJpa/C:\/Users\/NSult\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/3.2.3\/spring-boot-3.2.3.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.boot=/=/maven.artifactId=/spring-boot=/=/maven.version=/3.2.3=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.boot(CommandLineRunner.class[CommandLineRunner" modifiers="1537" timestamp="1708632201000"/>
+</typeInfoHistroy>

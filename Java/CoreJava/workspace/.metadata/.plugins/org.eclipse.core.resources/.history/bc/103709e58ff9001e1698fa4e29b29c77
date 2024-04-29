@@ -1,0 +1,21 @@
+package practice.streamapi;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LaunchFE {
+
+	public static void main(String[] args) 
+	{
+		List list=new ArrayList();
+		list.add(20);
+		list.add(30);
+		list.add(40);
+		list.add(90);
+		
+		list.forEach(i->System.out.print(i+" "));
+		
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.telusko.entity;
+
+public class Job 
+{
+	private Integer id;
+	private String title;
+	private String role;
+	private String tech;
+}

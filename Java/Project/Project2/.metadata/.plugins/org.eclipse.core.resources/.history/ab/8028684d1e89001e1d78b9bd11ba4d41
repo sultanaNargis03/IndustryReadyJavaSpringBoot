@@ -1,0 +1,9 @@
+package com.telusko.app.servive.impl;
+
+public interface UserServiceInterface 
+{
+	void login();
+	void CreditPoints();
+	void redemRewards();
+	
+}

@@ -1,0 +1,15 @@
+package com.learning.aws.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Service
+public interface IEmployeeService 
+{
+
+	@GetMapping("/Employees")
+	public ResponseEntity<List<Employee>> getAllEmployees()
+	{
+		
+	}
+}

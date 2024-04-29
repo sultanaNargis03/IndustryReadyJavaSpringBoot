@@ -1,0 +1,30 @@
+package com.telusko.app.servive;
+
+
+import java.util.Random;
+
+import com.telusko.app.model.Transaction;
+import com.telusko.app.model.User;
+import com.telusko.app.servive.impl.TransactionInterface;
+
+public class TransactionService implements TransactionInterface
+{
+	private static final int MIN_AMOUNT = 1000;
+    private static final int MAX_AMOUNT = 20000;
+
+	@Override
+	public int generateRandomTransaction() {
+		// TODO Auto-generated method stub
+
+	        Random random = new Random();
+	        return random.nextInt(MAX_AMOUNT - MIN_AMOUNT + 1) + MIN_AMOUNT;
+	    
+	}
+
+	@Override
+	public void calculateCreditPoints() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

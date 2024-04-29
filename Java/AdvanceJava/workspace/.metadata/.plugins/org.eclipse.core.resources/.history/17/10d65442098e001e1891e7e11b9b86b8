@@ -1,0 +1,10 @@
+package com.telusko.jdbc.main;
+import java.sql.*;
+public class LaunchJDBCAll {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

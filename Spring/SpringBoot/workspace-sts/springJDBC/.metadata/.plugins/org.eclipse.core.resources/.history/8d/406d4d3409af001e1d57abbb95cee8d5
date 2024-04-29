@@ -1,0 +1,9 @@
+package com.telusko.dao;
+
+public class StudentTableBo {
+
+	public StudentTableBo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

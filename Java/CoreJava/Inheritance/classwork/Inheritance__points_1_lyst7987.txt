@@ -1,0 +1,40 @@
+Inheritance :
+
+Inheritance refers to one class acquiring properties and behaviour of another class.
+
+It also refers to writing the program as heirarchy of classes rather than one class.
+
+We use extends keyword to achieve inheritance.
+
+It;s also refered as Is-A relationship. It will make sense to use Inheritance concept if there is is - A relationship exisits,
+
+
+====================================================================================================
+
+Parents class== Super class == Base class
+
+Child class==Derived class == Sub class
+
+Object class is parent of all classes in Java. 
+
+===========================================================================
+
+Keypoints to be noted:
+
+Single level inheritance is allowed.
+
+Multilevel  Inheritance is allowed.( One class has its parent that has its Parent so on....)
+
+Cyclic Inheritance is not allowed.
+
+Multiple Inheritance is not allowed. It will lead to ambiguity to compiler. Also refered as Diamond shaped problem.
+(refer board work notes and class recordings). i.e one class cannot extends multiple classes at a time.
+
+One parent class can have multiple child classes.
+
+private members of a class cannot participate in Inheritance.This is to preserve encapsulation. 
+
+Constructor will not participate in Inheritance, however it will be executed bcz of super() call in child class Constructor.
+
+
+

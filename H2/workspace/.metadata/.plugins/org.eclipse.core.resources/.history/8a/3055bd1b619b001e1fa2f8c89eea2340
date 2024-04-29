@@ -1,0 +1,12 @@
+package com.telusko.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Teacher 
+{
+	private Integer id;
+	private String name;
+	private String city;
+	private Double salary;
+}

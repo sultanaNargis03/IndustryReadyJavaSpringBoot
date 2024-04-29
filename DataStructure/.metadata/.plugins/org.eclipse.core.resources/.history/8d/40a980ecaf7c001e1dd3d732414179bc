@@ -1,0 +1,53 @@
+package searching;
+
+class BinarySearch
+{
+
+	public int binarySearch(int[] arr, int target) 
+	{
+		int left=0;
+		int right=arr.length-1;
+		
+		while(left<=right)
+		{
+			int mid=(left+right)/2;
+			
+			if(arr[mid]==target)
+			{
+				return mid;
+			}
+			else if(arr[mid]<target)
+			{
+				left=mid+1;
+			}
+			else if(arr[mid]<target)
+			{
+				right=mid-1;
+			}
+			
+		}
+		return -1;
+		
+	}
+	
+}
+
+public class LaunchBinarysearch {
+
+	public static void main(String[] args) 
+	{
+		
+		int arr[]= {10,20,40,75,50,100,116,140,150,175};
+		int target=10;
+		BinarySearch bs=new BinarySearch();
+		
+		int result=bs.binarySearch(arr,target);
+		if(result!=-1)	
+			System.out.println("element found at index: "+result);
+		else
+			System.out.println("item not found");
+			
+
+	}
+
+}

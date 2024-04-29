@@ -1,0 +1,7 @@
+package com.telusko.app.servive.impl;
+
+public interface TransactionInterface 
+{
+	int generateRandomTransaction();
+	void calculateCreditPoints();
+}

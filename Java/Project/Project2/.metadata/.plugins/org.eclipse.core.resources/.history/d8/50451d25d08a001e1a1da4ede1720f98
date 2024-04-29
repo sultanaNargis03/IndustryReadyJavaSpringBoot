@@ -1,0 +1,119 @@
+package com.telusko.app.main;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+import java.util.Set;
+
+import com.telusko.app.model.User;
+import com.telusko.app.servive.TransactionService;
+import com.telusko.app.servive.UserService;
+import com.telusko.app.servive.impl.UserServiceInterface;
+public class LaunchRewardApp 
+{
+
+	public static void main(String[] args) 
+	{
+		List<User> users=new ArrayList<>();
+		users.add( new User(1, "User1", "pwd1"));
+		users.add( new User(2, "User2", "pwd2"));
+		users.add( new User(3, "User3", "pwd3"));
+		users.add( new User(4, "User4", "pwd4"));
+		users.add( new User(5, "User5", "pwd5"));
+		
+		HashMap<String,String[]>rewards=new HashMap<>();
+		rewards.put("Elecronics",new String[]{"Headphone","Earbuds","Watch","Camera","Laptop","Refrigerator"});
+		rewards.put("Travel coupons",new String[]{"25% discount","50% discount","75% discount","90% discount","100% discount"});
+		
+		TransactionService service=new TransactionService(users);
+		Thread t1=new Thread()
+				{
+					public void run()
+					{
+						while(true)
+						{
+							
+							service.generateRandomTransaction();
+							try {
+								Thread.sleep(10000);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					}
+				};
+		t1.start();
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter your id");
+		int id=sc.nextInt();
+		sc.nextLine();
+		System.out.println("Enter your password");
+		String pwd=sc.nextLine();
+		
+		UserServiceInterface us=new UserService(users,rewards);
+		User currentUser=us.login(id,pwd);
+		
+		if(currentUser!=null)
+		{
+			System.out.println("Login successfull!!");
+			System.out.println("User details: "+currentUser);
+			
+			System.out.println("Do you want to see your tootal credit points?(Y/N)");
+			String input1=sc.nextLine();
+			if(input1.equalsIgnoreCase("y"))
+			{
+				us.showCreditPoints(currentUser);
+			}	
+			else if(input1.equalsIgnoreCase("N"))
+			{
+				
+			}
+			else
+			{
+				System.out.println("wrong input");
+			}
+			System.out.println("Do you want to redeem the rewards?(Y/N)");
+			String input2=sc.nextLine();
+			if(input2.equalsIgnoreCase("y"))
+			{
+				Set category=rewards.entrySet();
+				Iterator itr=category.iterator();
+				while(itr.hasNext())
+				{
+					Map.Entry pair=(Entry) itr.next();
+					String key=(String) pair.getKey();
+					String[] value=pair.getValue();
+					//System.out.println(pair.getKey() + " :  " + pair.getValue());
+				}	
+				
+				System.out.println("Please choose the reward ");
+				String input3=sc.nextLine();
+				us.redemRewards(currentUser);
+			}	
+			else if(input1.equalsIgnoreCase("N"))
+			{
+				
+			}
+			else
+			{
+				System.out.println("wrong input");
+			}
+			
+		}
+
+		else
+		{
+			System.out.println("Invalid credentials");
+		}
+		
+		
+	}
+
+}

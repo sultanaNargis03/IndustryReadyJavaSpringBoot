@@ -1,0 +1,4 @@
+myproject.name=Springers
+#spring.profiles.include=spring
+spring.profiles.active=spring
+#spring.profiles.active=prod

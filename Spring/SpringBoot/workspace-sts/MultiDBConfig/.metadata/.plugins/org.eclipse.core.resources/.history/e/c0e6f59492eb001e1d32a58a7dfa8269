@@ -1,0 +1,8 @@
+package com.telusko.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Db2Config {
+
+}

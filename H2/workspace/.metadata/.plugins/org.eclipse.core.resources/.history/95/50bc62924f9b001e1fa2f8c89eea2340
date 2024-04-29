@@ -1,0 +1,37 @@
+package com.telusko.main;
+
+import org.hibernate.Session;
+
+import com.telusko.entity.Employee2;
+import com.telusko.util.HibernateUtility;
+
+public class LaunchAppOnetoMany {
+
+	public static void main(String[] args) 
+	{
+		
+		Session session=null;
+		
+		session=HibernateUtility.getSession();
+		
+		if(session!=null)
+		{
+			Employee2 emp=new Employee2();
+			emp.setId(1);
+			emp.setName("Nargis");
+			emp.setAge(25);
+			emp.setCity("Bengaluru");
+			emp.setSalary(80000.333);
+			
+			Employee2 emp2=new Employee2();
+			emp2.setId(2);
+			emp2.setName("Tamim");
+			emp2.setAge(15);
+			emp2.setCity("Bengaluru");
+			emp2.setSalary(800000.333);
+		}
+		
+		
+	}
+
+}

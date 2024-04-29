@@ -1,0 +1,13 @@
+package com.telusko.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Profile 
+{
+	@Id
+	private Integer pid;
+	private String name;
+	private byte[] img;
+}

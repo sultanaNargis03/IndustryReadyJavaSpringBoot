@@ -1,0 +1,14 @@
+class Transaction {
+    private int amount;
+    private User user;
+
+    public Transaction(int amount, User user) {
+        this.amount = amount;
+        this.user = user;
+    }
+
+    public void processTransaction() {
+        user.earnPoints(amount);
+        System.out.println(user.getName() + " spent " + amount + " rs. Earned " + (amount / 100) + " points.");
+    }
+}

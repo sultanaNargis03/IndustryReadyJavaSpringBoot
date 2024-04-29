@@ -1,0 +1,14 @@
+package com.telusko.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Job 
+{
+	@Id
+	private Integer id;
+	private String title;
+	private String role;
+	private String tech;
+}

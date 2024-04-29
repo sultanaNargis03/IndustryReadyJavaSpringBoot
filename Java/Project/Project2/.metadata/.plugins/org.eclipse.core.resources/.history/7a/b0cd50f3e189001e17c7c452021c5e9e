@@ -1,0 +1,46 @@
+package com.telusko.app.servive;
+
+
+import java.util.List;
+import java.util.Random;
+
+import com.telusko.app.model.Transaction;
+import com.telusko.app.model.User;
+import com.telusko.app.servive.impl.TransactionInterface;
+
+public class TransactionService implements TransactionInterface
+{
+	private static final int MIN_AMOUNT = 1000;
+    private static final int MAX_AMOUNT = 20000;
+    private User user;
+    private List<User>users;
+    private Transaction transaction;
+    
+    TransactionService(User user)
+    {
+    	this.user=user;
+ 
+    }
+    
+	@Override
+	public void generateRandomTransaction() 
+	{
+		Random random = new Random();
+		int randomAmount= random.nextInt(MAX_AMOUNT - MIN_AMOUNT + 1) + MIN_AMOUNT; 
+        int randomUserId = random.nextInt(users.size());   
+       // Transaction transaction = new Transaction(randomAmount, users.get(randomUserId));
+        //transaction.processTransaction();
+	}
+
+	@Override
+	public void calculateCreditPoints() 
+	{
+//		int amount=generateRandomTransaction();
+//		transaction.setAmount(amount);
+//		int creditPoints=amount/100;
+//		((User) users).setPoints(creditPoints);
+//		//totalAmount+=amount;
+		
+	}
+	
+}

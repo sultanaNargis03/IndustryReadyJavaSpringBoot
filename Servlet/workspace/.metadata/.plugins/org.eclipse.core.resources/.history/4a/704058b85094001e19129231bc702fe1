@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<body style="align-content: center">
+<h1>Welcome to our app</h1>
+<h2>Student registration!!</h2>
+<form method="post" action="./Request1">
+	<table>
+		<tr>
+			<td>Student Name</td>
+			<td><input type="text" name="sname"</td>
+		</tr>
+		<tr>
+			<td>Student City</td>
+			<td><input type="text" name="scity"</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" name="password"</td>
+		</tr>
+		<tr>
+			<td>Student City</td>
+			<td><input type="text" name="scity"</td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Register"</td>
+		</tr>
+	</table>
+</form>
+<a href="./Request2">Show Stored Details</a>
+</body>
+</html>

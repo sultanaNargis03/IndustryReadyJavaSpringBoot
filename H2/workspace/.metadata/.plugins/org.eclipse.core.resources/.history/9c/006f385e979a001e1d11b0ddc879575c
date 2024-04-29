@@ -1,0 +1,5 @@
+package com.telusko.util;
+
+public interface HibernateUtil {
+
+}

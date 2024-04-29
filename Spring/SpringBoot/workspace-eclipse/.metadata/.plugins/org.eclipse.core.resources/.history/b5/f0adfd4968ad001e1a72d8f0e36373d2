@@ -1,0 +1,12 @@
+package com.telusko.beans;
+
+public class Hibernate implements Course
+{
+
+	@Override
+	public boolean selectCourse(double amouny) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

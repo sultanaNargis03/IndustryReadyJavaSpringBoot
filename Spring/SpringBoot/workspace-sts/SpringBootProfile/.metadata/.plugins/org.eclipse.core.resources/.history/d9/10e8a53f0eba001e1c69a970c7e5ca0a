@@ -1,0 +1,17 @@
+package com.telusko;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootProfilesApplication 
+{
+	@Value("${myproject.name}")
+	private String projectName;
+	public static void main(String[] args)
+	{
+		SpringApplication.run(SpringBootProfilesApplication.class, args);
+	}
+
+}

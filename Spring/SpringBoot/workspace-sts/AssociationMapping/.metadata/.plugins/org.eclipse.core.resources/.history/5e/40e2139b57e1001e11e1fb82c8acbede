@@ -1,0 +1,14 @@
+package com.telusko.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class PhoneNumber 
+{
+
+	public PhoneNumber() 
+	{
+		
+	}
+
+}

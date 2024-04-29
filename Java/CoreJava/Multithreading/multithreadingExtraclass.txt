@@ -1,0 +1,14 @@
+multithreading
+classlevel lock vs  object level lock
+
+if u are using one object ref in two diff class method-->ts will run method it will not release lock until complete the one method's activity.two activity can;t execute concurrently.
+
+if u r using two diff object ref for two diff method from two diff classes then it will release lock. two activity execute concurrently.
+
+classlevel lock:using static-->two activity execute concurrently
+
+
+Sleep(from Thread class) vs wait(from object  class(object is parent of al classes))
+
+sleep()-->whhen applying synchronized --not release a lock
+wait()--> whhen applying synchronized--release a lock

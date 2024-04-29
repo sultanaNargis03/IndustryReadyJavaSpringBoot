@@ -1,0 +1,32 @@
+package com.telusko.main;
+
+
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.telusko.entity.Profile;
+
+public class LaunchApp {
+
+	public static void main(String[] args) throws FileNotFoundException 
+	{
+		SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
+		
+		Session session=sessionFactory.openSession();
+		Transaction transaction=session.beginTransaction();
+		
+		Profile p=new Profile();
+		p.setName("Nargis");
+		FileInputStream fis=new FileInputStream("\"C:\\Users\\NSult\\OneDrive\\Pictures\\Linkedin.jpg\"");
+		
+		transaction.commit();
+		session.close();
+	}
+
+}

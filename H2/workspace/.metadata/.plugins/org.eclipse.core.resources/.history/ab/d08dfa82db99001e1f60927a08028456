@@ -1,0 +1,17 @@
+package com.telusko.entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name="Implementers")
+public class Implementers 
+{
+	@Id
+	private Integer id;
+	private String name;
+	private Date date;
+	private Date time;
+	private Date dateAndTime;
+}

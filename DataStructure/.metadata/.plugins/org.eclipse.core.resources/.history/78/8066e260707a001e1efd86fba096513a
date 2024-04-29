@@ -1,0 +1,43 @@
+package searching;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class BinarySearch {
+
+	public static void main(String[] args) 
+	{
+		int arr[]= {10,20,30,60,90};
+		int target=50;
+		int low=0;
+		int high=arr.length-1;
+		
+		while(low<=high)
+		{
+			int mid=(low+high)/2;
+			
+			if(arr[mid]==target)
+				System.out.println(target+"found at "+mid);
+			else if(arr[mid]<target)
+			{
+				low=mid+1;
+
+			}
+			else if(arr[mid]>target)
+			{
+				high=arr.length;
+
+			}
+			else
+			{
+				System.out.println("not found");
+			}
+			
+			}
+			
+		
+		
+	}
+
+}

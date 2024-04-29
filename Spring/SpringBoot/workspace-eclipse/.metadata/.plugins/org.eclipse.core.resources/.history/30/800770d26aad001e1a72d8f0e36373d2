@@ -1,0 +1,9 @@
+package com.telusko.beans;
+
+public class Configure {
+
+	public Configure() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

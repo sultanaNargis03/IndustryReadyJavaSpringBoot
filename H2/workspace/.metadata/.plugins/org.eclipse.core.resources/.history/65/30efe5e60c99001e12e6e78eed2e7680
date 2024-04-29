@@ -1,0 +1,12 @@
+package com.telusko.main;
+
+public class LaunchApp1 
+{
+
+	public static void main(String[] args) 
+	{
+		//Inform jvm to activate hibernate
+		
+	}
+
+}

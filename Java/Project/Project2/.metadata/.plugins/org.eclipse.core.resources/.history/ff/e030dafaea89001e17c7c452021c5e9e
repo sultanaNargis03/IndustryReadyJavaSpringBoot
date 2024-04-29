@@ -1,0 +1,3 @@
+interface TransactionOperations {
+    void generateRandomTransaction();
+}

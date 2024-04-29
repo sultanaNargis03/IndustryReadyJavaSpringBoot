@@ -1,0 +1,26 @@
+pharmacy
+
+add medicine
+showing available medicine
+add medicine
+
+register add update delete customer
+
+generate bill
+
+
+--medicine
+name
+composition
+exp date
+price
+
+--customer
+name
+phn number
+
+--role
+admin
+normal user
+
+spring rest,logger,junit, swagger, hateos, mysql,mailIntegration

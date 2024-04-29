@@ -1,0 +1,17 @@
+package com.telusko.app.servive.impl;
+
+import java.util.List;
+
+import com.telusko.app.model.User;
+
+public interface UserServiceInterface 
+{
+	
+	void redemRewards();
+	boolean login(List<User> user, int id, String pwd);
+
+	User login(int id, String pwd);
+	void showCreditPoints(User currentUser);
+	
+	
+}

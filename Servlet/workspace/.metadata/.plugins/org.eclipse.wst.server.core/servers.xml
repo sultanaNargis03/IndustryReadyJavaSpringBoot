@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="14">
+    <list key="modules" value0="FirstServlet::org.eclipse.jst.jee.server:FirstServlet::jst.web::3.1" value1="SecondServ::org.eclipse.jst.jee.server:SecondServ::jst.web::3.1" value2="Registration::org.eclipse.jst.jee.server:Registration::jst.web::3.1" value3="RegistrationJdbc::org.eclipse.jst.jee.server:RegistrationJdbc::jst.web::3.1" value4="ReqDispatchBasics::org.eclipse.jst.jee.server:ReqDispatchBasics::jst.web::3.1" value5="SessionMangement::org.eclipse.jst.jee.server:SessionMangement::jst.web::3.1" value6="Learningportal::org.eclipse.jst.jee.server:Learningportal::jst.web::3.1"/>
+  </server>
+</servers>

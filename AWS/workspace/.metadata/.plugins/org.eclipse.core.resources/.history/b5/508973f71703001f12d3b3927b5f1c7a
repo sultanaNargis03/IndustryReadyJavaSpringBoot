@@ -1,0 +1,5 @@
+package com.learning.aws.service;
+
+public class EmployeeServiceImpl implements IEmployeeService {
+
+}

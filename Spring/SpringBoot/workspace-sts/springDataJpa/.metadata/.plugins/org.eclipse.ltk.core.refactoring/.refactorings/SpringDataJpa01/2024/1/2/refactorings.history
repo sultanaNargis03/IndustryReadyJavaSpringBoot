@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.telusko.dao.IStudents&apos; to &apos;IStudentDao&apos;&#x0D;&#x0A;- Original project: &apos;SpringDataJpa01&apos;&#x0D;&#x0A;- Original element: &apos;com.telusko.dao.IStudents&apos;&#x0D;&#x0A;- Renamed element: &apos;com.telusko.dao.IStudentDao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IStudents&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.telusko.dao{IStudents.java[IStudents" matchStrategy="1" name="IStudentDao" qualified="false" references="true" similarDeclarations="true" stamp="1704819949362" textual="false" version="1.0"/>
+</session>

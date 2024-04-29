@@ -1,0 +1,10 @@
+package com.telusko.app.servive.impl;
+
+public interface UserServiceInterface 
+{
+	
+	void CreditPoints();
+	void redemRewards();
+	boolean login(int id, String pwd);
+	
+}

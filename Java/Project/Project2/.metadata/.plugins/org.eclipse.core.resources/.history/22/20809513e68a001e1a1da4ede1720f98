@@ -1,0 +1,78 @@
+package com.telusko.app.servive;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.telusko.app.model.User;
+import com.telusko.app.servive.impl.UserServiceInterface;
+
+public class UserService implements UserServiceInterface
+{
+	List<User> user;
+	Map<String, List<String>> rewards;
+	public UserService(List<User> user, Map<String, List<String>> rewards) 
+	{
+		this.user=user;
+		this.rewards=rewards;
+	}
+
+	@Override
+	public User login(int id, String pwd) 
+	{
+		User currentUser = null;
+		for(User u:user)
+		{
+			if(u.getId().equals(id)&&u.getPassword().equals(pwd))
+			{
+				
+					//System.out.println(u.getName()+" Total credit points : "+u.getPoints());
+				 currentUser=u;					
+			}
+		}
+		
+		return currentUser;
+		
+	}
+
+	@Override
+	public void showCreditPoints(User currentUser) 
+	{
+		
+		System.out.println("Total credit points earned by "+currentUser.getName()+" : "+currentUser.getPoints());
+	}
+
+	@Override
+	public void redemRewards(String reward) 
+	{
+		int pr=pointsRequired(reward);
+		for(User u:user)
+		{
+			if(u.getPoints()>=pr)
+			{
+				System.out.println("99@88#77$66 coupon ggenerated for "+u.getName()+"to redeem "+reward);
+			}
+			else
+			{
+				System.out.println(u.getName() + " does not have enough points to redeem "+reward);
+			}
+		}
+		
+	}
+	public int pointsRequired(String product)
+	{
+		int points=0;
+		switch(product.toLowerCase())
+		{
+			case "laptop","adventure tour"->points= 200_000;
+			case "phone","","industry ready java developer"->points= 150_000;
+			case "earbuds","headphone","data structure"->points= 150_000;
+			case "Travel Voucher"->points= 100_000;
+			case "Vacation Package","React"->points= 80_000;
+			case "hibernate"->points= 50_000;
+			case "watch"->points= 10_000;
+			
+		}
+	}
+	
+}

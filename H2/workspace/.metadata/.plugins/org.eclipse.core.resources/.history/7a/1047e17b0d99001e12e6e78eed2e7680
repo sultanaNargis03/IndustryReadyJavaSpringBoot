@@ -1,0 +1,23 @@
+package com.telusko.main;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class LaunchApp1 
+{
+
+	public static void main(String[] args) 
+	{
+		//Inform jvm to activate hibernate
+		Configuration config = new Configuration(); 
+		config.configure();
+		
+		//creating SessionFactory to hold all others req. objects for hibernate
+		SessionFactory sessionFactory=config.buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		
+	
+	}
+
+}

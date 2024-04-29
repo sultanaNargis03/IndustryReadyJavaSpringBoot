@@ -1,0 +1,7 @@
+package com.telusko.entity;
+
+@Entity
+public class Profile 
+{
+
+}

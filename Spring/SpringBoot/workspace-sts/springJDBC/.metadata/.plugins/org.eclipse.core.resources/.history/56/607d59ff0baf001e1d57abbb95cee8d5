@@ -1,0 +1,39 @@
+package com.telusko.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+public class StudentDaoImpl implements IStudentDao 
+{
+	private static final String SELECT_QUERY = "select * from students where sid=?";
+	@Autowired
+	private JdbcTemplate jdbc;
+	private static class RowMapperImp implements RowMapper<StudentTableBo>
+	{
+
+		@Override
+		public StudentTableBo mapRow(ResultSet rs, int rowNum) throws SQLException {
+
+			StudentTableBo bo=new StudentTableBo();
+			int id=rs.getInt(1);
+			bo.setSid(id);
+			bo.setSname(rs.getString(2));
+			bo.setSage(rs.getInt(3));
+			bo.setScity(rs.getString(4));
+			
+			return null;
+		}
+		
+	}
+	@Override
+	public StudentTableBo getStudentById(int id) 
+	{
+		jdbc.queryForObject(SELECT_QUERY,new RowMapperImp<StudentTableBo>(),id);
+		return null;
+	}
+
+}

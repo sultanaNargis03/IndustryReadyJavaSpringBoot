@@ -1,0 +1,32 @@
+package practice;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+public class Launch2 {
+
+	public static void main(String[] args)
+	{
+//		List<Integer> list=Arrays.asList(2,4,5,6,7,8,9,10);
+//		
+//		Optional<String> num=list.stream()
+//			.filter(i->i%2==0)
+//			.map(i->i*2)
+//			.findFirst()
+//			.orElseGet("404");
+//		System.out.println(num);
+		//forEach(i->System.out.println(i));
+		
+		List<String>list=Arrays.asList("Dona","Nargis","Tamim");
+		
+							  list.stream()
+								  .filter(n->n.contains("a"))
+								  .map(i->i.replace("a", "z"))
+								  .forEach(i->System.out.println(i));
+//								  .findFirst()
+//								  .orElse("not found");
+//		System.out.println(name);
+	}
+
+}

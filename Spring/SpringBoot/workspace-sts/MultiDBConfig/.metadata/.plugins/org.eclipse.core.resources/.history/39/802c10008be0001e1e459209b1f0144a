@@ -1,0 +1,15 @@
+package com.telusko.rest;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.telusko.repo.IProduct;
+import com.telusko.repo.Icustomer;
+
+@RestController
+@RequestMapping("/api")
+public class MultiDbApiController 
+{
+	private IProduct repo1;
+	private Icustomer repo2;
+}

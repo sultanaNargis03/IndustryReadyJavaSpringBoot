@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="true"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="D:\IndustryReadyJava\Spring\SpringBoot\workspace-sts\springDataJpa\VaccineMangementApp\.git">
+			<item value="false"/>
+			<item value="sultanaNargis03 &lt;nargissultana969@gmail.com&gt;"/>
+			<item value="&quot;vaccine v1.0&quot;"/>
+			<item value="sultanaNargis03 &lt;nargissultana969@gmail.com&gt;"/>
+			<item value="d6adca0355132aedbb6590954b2179fa973af4fa"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+	</section>
+</section>

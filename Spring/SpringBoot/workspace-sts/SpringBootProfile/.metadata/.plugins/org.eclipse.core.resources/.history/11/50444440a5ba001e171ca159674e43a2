@@ -1,0 +1,5 @@
+myproject.name=Springers
+#spring.profiles.include=mockito
+spring.profiles.active=java
+#spring.profiles.active=prod
+server.port=8081

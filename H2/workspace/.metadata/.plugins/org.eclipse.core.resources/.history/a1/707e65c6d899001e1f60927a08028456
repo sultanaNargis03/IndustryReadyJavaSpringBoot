@@ -1,0 +1,15 @@
+package com.telusko.main;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class LaunchApp 
+{
+
+	public static void main(String[] args) 
+	{
+		SessionFactory session=new Configuration().configure().buildSessionFactory();
+
+	}
+
+}

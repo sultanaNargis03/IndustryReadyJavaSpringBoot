@@ -1,0 +1,68 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class Main {
+    public static void main(String[] args) {
+        List<User> users = new ArrayList<>();
+        users.add(new User(1, "User1", "password1"));
+        users.add(new User(2, "User2", "password2"));
+        users.add(new User(3, "User3", "password3"));
+        users.add(new User(4, "User4", "password4"));
+        users.add(new User(5, "User5", "password5"));
+
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                generateRandomTransaction(users);
+            }
+        }, 10000, 10000);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+
+        User currentUser = login(users, username, password);
+        if (currentUser != null) {
+            System.out.println("Login successful.");
+            displayCreditScore(currentUser);
+
+            System.out.print("Do you want to redeem your reward? (yes/no): ");
+            String redeemChoice = scanner.nextLine();
+            if ("yes".equalsIgnoreCase(redeemChoice)) {
+                currentUser.redeemReward();
+            }
+        } else {
+            System.out.println("Login failed. Invalid username or password.");
+        }
+
+        scanner.close();
+    }
+
+    private static User login(List<User> users, String username, String password) {
+        for (User user : users) {
+            if (user.getName().equalsIgnoreCase(username) && user.getPassword().equals(password)) {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    private static void displayCreditScore(User user) {
+        System.out.println("Your credit score: " + user.getCreditPoints() + " points.");
+    }
+
+    private static void generateRandomTransaction(List<User> users) {
+        Random random = new Random();
+        int randomUserId = random.nextInt(users.size());
+        int randomAmount = random.nextInt(30000) + 10000; // Random amount between 10000 and 40000
+        Transaction transaction = new Transaction(randomAmount, users.get(randomUserId));
+        transaction.processTransaction();
+    }
+}

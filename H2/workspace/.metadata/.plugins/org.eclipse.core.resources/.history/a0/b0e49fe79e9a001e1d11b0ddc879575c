@@ -1,0 +1,21 @@
+package com.telusko.main;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.telusko.util.HibernateUtil;
+
+public class LauncOnetoOne {
+
+	public static void main(String[] args) 
+	{
+		Session session=null;
+		Transaction transaction=null;
+		session = HibernateUtil.getSession();
+		if(session!=null)
+		{
+			transaction = session.beginTransaction();
+		}
+	}
+
+}

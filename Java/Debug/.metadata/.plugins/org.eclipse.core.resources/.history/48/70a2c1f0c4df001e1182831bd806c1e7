@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class LaunchApp1 
+{
+
+	public static void main(String[] args) 
+	{
+		System.out.println("License App started");
+		
+		System.out.println("Enter the age");
+		Scanner sc=new Scanner(System.in);
+		int age=sc.nextInt();
+		if(age>=18)
+		{
+			System.out.println("Eligible for License as you're "+age);
+			
+		}
+		else
+		{
+			System.out.println("Not eligible for License as you're still "+age);
+		}
+		System.out.println("License App Logged out");
+	}
+
+}

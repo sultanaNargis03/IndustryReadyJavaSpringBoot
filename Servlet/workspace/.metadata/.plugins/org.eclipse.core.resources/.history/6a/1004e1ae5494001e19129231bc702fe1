@@ -1,0 +1,5 @@
+package com.StudentPortal.model;
+
+public class JdbcUtility {
+
+}

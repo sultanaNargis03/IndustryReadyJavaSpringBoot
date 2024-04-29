@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<h1 style="color:red"><marquee>Learning App</marquee></h1>
+</head>
+<body bgcolor="black">
+<h2 style="color:white">Login Here !!</marquee></h2>
+
+<form action="./login">
+	<table style="color:darkgreen">
+		<tr>
+			<td>User Name</td>
+			<td><input type="text" name="uname"</td>
+		</tr>
+		
+			<td>Password</td>
+			<td><input type="password" name="password"</td>
+		</tr>
+		
+		<tr>
+			<td><input type="submit" value="Login"</td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>

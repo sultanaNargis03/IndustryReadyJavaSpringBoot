@@ -1,0 +1,19 @@
+import java.util.List;
+import java.util.Random;
+
+class TransactionService implements TransactionOperations {
+    private List<User> users;
+
+    public TransactionService(List<User> users) {
+        this.users = users;
+    }
+
+    @Override
+    public void generateRandomTransaction() {
+        Random random = new Random();
+        int randomUserId = random.nextInt(users.size());
+        int randomAmount = random.nextInt(19000) + 1000; // Random amount between 10000 and 40000
+        Transaction transaction = new Transaction(randomAmount, users.get(randomUserId));
+        transaction.processTransaction();
+    }
+}

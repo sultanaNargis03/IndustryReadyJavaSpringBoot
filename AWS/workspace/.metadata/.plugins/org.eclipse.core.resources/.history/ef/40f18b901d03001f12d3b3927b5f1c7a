@@ -1,0 +1,45 @@
+package com.learning.aws.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.learning.aws.model.Employee;
+
+@Service
+public class EmployeeServiceImpl implements IEmployeeService {
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getEmployeeById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String addEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteEmployee(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+
+}

@@ -1,0 +1,48 @@
+
+public class User 
+{
+	 private int id;
+	    private String name;
+	    private int creditPoints;
+	    private String password;
+
+	    public User(int id, String name, String password) {
+	        this.id = id;
+	        this.name = name;
+	        this.creditPoints = 0;
+	        this.password = password;
+	    }
+
+	    public int getId() {
+	        return id;
+	    }
+
+	    public String getName() {
+	        return name;
+	    }
+
+	    public int getCreditPoints() {
+	        return creditPoints;
+	    }
+
+	    public void setCreditPoints(int creditPoints) {
+	        this.creditPoints = creditPoints;
+	    }
+
+	    public String getPassword() {
+	        return password;
+	    }
+
+	    public void earnPoints(int amount) {
+	        creditPoints += amount / 100; // 100 points for every 10000 rs spent
+	    }
+
+	    public void redeemReward() {
+	        if (creditPoints >= 200000) {
+	            System.out.println(name + " is redeeming a headphone as a reward!");
+	            creditPoints -= 200000;
+	        } else {
+	            System.out.println(name + " does not have enough points to redeem a reward.");
+	        }
+	    }
+}

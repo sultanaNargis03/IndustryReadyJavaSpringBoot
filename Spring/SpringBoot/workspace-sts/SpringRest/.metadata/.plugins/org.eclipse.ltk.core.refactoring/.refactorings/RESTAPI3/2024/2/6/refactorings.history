@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.telusko.pojo&apos; to &apos;JacksonAPI1/src/main/java/com.telusko.main&apos;&#x0D;&#x0A;- Original project: &apos;RESTAPI3&apos;&#x0D;&#x0A;- Destination element: &apos;JacksonAPI1/src/main/java/com.telusko.main&apos;&#x0D;&#x0A;- Original element: &apos;RESTAPI3/src/main/java/com.telusko.pojo&apos;" description="Copy package" destination="=JacksonAPI1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.telusko.main" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.telusko.pojo" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1707324164721" version="1.0"/>
+</session>

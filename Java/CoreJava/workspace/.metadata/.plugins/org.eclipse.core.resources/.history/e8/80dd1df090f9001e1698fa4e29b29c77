@@ -1,0 +1,11 @@
+package practice.streamapi;
+
+public class LaunchFilter {
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

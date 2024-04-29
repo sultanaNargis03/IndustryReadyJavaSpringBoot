@@ -1,0 +1,9 @@
+package com.telusko.springsecdemo.pojo;
+
+public class Student {
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

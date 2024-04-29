@@ -1,0 +1,72 @@
+2024-01-28 21:36:29,693 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-01-28 21:40:34,485 [Worker-19: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.nargis:SpringMVCP:0.0.1-SNAPSHOT @ D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\pom.xml.
+2024-01-28 21:40:37,065 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCP/src/main/java
+2024-01-28 21:40:37,066 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/main/resources
+2024-01-28 21:40:37,071 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/main/resources
+2024-01-28 21:40:37,083 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCP/src/test/java
+2024-01-28 21:40:37,085 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/test/resources
+2024-01-28 21:40:38,128 [Worker-19: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2024-01-28 21:40:38,134 [Worker-19: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-01-28 21:40:38,679 [Worker-19: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.nargis:SpringMVCP:0.0.1-SNAPSHOT @ D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\pom.xml.
+2024-01-28 21:40:40,499 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCP/src/main/java
+2024-01-28 21:40:40,500 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/main/resources
+2024-01-28 21:40:40,501 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/main/resources
+2024-01-28 21:40:40,502 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCP/src/test/java
+2024-01-28 21:40:40,502 [Worker-19: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/test/resources
+2024-01-28 21:40:41,494 [Worker-19: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 0.00 sec 
+2024-01-28 21:40:42,693 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 21:40:42,729 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:40:42,737 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:43:50,763 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:43:50,765 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:43:50,769 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:46:50,829 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 21:46:50,834 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:46:50,838 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:52:15,697 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 21:52:15,703 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:52:15,706 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:55:41,141 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:55:41,141 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:55:41,145 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:55:46,360 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 21:55:46,366 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:55:46,370 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:56:19,213 [Worker-22: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.nargis:SpringMVCP:0.0.1-SNAPSHOT @ D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\pom.xml.
+2024-01-28 21:56:19,888 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:56:19,888 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:56:19,892 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:57:17,180 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-01-28 21:57:17,538 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.nargis:SpringMVCP:0.0.1-SNAPSHOT @ D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\pom.xml.
+2024-01-28 21:57:17,949 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCP/src/main/java
+2024-01-28 21:57:17,949 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/main/resources
+2024-01-28 21:57:17,950 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/main/resources
+2024-01-28 21:57:17,950 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCP/src/test/java
+2024-01-28 21:57:17,950 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/test/resources
+2024-01-28 21:57:18,204 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2024-01-28 21:57:18,556 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 21:57:18,579 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:57:18,585 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:57:43,265 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-01-28 21:57:43,567 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.nargis:SpringMVCP:0.0.1-SNAPSHOT @ D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\pom.xml.
+2024-01-28 21:57:43,976 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCP/src/main/java
+2024-01-28 21:57:43,976 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/main/resources
+2024-01-28 21:57:43,976 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/main/resources
+2024-01-28 21:57:43,976 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCP/src/test/java
+2024-01-28 21:57:43,976 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCP/src/test/resources
+2024-01-28 21:57:44,272 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2024-01-28 21:57:44,568 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 21:57:44,579 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:57:44,582 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 21:58:40,472 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 21:58:40,485 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 21:58:40,490 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 22:01:18,133 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 22:01:18,133 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 22:01:18,136 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 22:01:41,396 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 22:01:41,397 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 22:01:41,399 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources
+2024-01-28 22:03:14,104 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 22:03:14,105 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 22:03:14,106 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\IndustryReadyJava\Spring\SpringBoot\workspace-eclipse\SpringBootMVC\SpringMVCP\src\test\resources

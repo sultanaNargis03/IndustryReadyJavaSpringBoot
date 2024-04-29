@@ -1,0 +1,23 @@
+package searching;
+
+import java.util.ArrayList;
+
+public class BinarySearch {
+
+	public static void main(String[] args) 
+	{
+		ArrayList<Integer> list=new ArrayList<>();
+		
+		list.add(10);
+		list.add(30);
+		list.add(57);
+		list.add(100);
+		list.add(140);
+		list.add(160);
+		list.add(180);
+		System.out.print(list);
+
+
+	}
+
+}

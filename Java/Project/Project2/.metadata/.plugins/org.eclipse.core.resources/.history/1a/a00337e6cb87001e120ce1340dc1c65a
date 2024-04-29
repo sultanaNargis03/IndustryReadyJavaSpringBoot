@@ -1,0 +1,54 @@
+import java.util.List;
+import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
+
+
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        List<User> users = List.of(
+                new User(1, "User1", "password1"),
+                new User(2, "User2", "password2"),
+                new User(3, "User3", "password3"),
+                new User(4, "User4", "password4"),
+                new User(5, "User5", "password5")
+        );
+
+        UserOperations userService = new UserService(users);
+        TransactionOperations transactionService = new TransactionService(users);
+
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                transactionService.generateRandomTransaction();
+            }
+        }, 10000, 10000);
+
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+
+        User currentUser = userService.login(username, password);
+        if (currentUser != null) {
+            System.out.println("Login successful.");
+            userService.displayCreditScore(currentUser);
+
+            System.out.print("Do you want to redeem your reward? (yes/no): ");
+            String redeemChoice = scanner.nextLine();
+            if ("yes".equalsIgnoreCase(redeemChoice)) {
+                userService.redeemReward(currentUser);
+            }
+        } else {
+            System.out.println("Login failed. Invalid username or password.");
+        }
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,16 @@
+package com.telusko.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Employee2 
+{
+	@Id
+	private Integer id;
+	private String name;
+	private String city;
+	private Integer age;
+	private Double salary;
+	
+}

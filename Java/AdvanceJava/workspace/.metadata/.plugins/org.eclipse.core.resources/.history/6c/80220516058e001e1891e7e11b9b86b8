@@ -1,0 +1,21 @@
+package com.jdbc;
+import java.sql.*;
+public class LaunchJDBC3 {
+
+	public static void main(String[] args) throws ClassNotFoundException 
+	{
+		// load and register the driver
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		System.out.println("Driver is registered");
+				
+		//Establish the connection
+		String url="jdbc:mysql://localhost:3306/teluskodb";
+		String userName="root";
+		String password="root";
+		
+		Connection connect=DriverManager.getConnection(url, userName, password);
+		System.out.println("connection established");
+
+	}
+
+}

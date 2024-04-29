@@ -1,0 +1,6 @@
+package com.industrystd.util;
+import java.sql.*;
+public class JDBCUtility 
+{
+	
+}

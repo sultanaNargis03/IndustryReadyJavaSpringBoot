@@ -1,0 +1,18 @@
+2024-02-22 22:12:01,531 -{service} 
+ [TRACE] - msg coming from trace method -> com.telusko.log4j.LaunchDemo2024-02-22 22:12:01,535 -{service} 
+ [INFO] - msg coming from info method -> com.telusko.log4j.LaunchDemo2024-02-22 22:12:01,535 -{service} 
+ [DEBUG] - msg coming from debug method -> com.telusko.log4j.LaunchDemo2024-02-22 22:12:01,536 -{service} 
+ [WARN] - msg coming from warn method -> com.telusko.log4j.LaunchDemo2024-02-22 22:12:01,536 -{service} 
+ [ERROR] - msg coming from error method -> com.telusko.log4j.LaunchDemo2024-02-22 22:12:01,536 -{service} 
+ [FATAL] - msg coming from fatal method -> com.telusko.log4j.LaunchDemo2024-02-22 22:14:16,478 - -> com.telusko.log4j.LaunchDemo , {service} --> [TRACE] - msg coming from trace method 
+2024-02-22 22:14:16,484 - -> com.telusko.log4j.LaunchDemo , {service} --> [INFO] - msg coming from info method 
+2024-02-22 22:14:16,484 - -> com.telusko.log4j.LaunchDemo , {service} --> [DEBUG] - msg coming from debug method 
+2024-02-22 22:14:16,484 - -> com.telusko.log4j.LaunchDemo , {service} --> [WARN] - msg coming from warn method 
+2024-02-22 22:14:16,485 - -> com.telusko.log4j.LaunchDemo , {service} --> [ERROR] - msg coming from error method 
+2024-02-22 22:14:16,485 - -> com.telusko.log4j.LaunchDemo , {service} --> [FATAL] - msg coming from fatal method 
+2024-02-22 22:15:51,391 - -> com.telusko.log4j.LaunchDemo , {service} --> [TRACE] - msg coming from trace method 
+2024-02-22 22:15:51,394 - -> com.telusko.log4j.LaunchDemo , {service} --> [INFO] - msg coming from info method 
+2024-02-22 22:15:51,395 - -> com.telusko.log4j.LaunchDemo , {service} --> [DEBUG] - msg coming from debug method 
+2024-02-22 22:15:51,395 - -> com.telusko.log4j.LaunchDemo , {service} --> [WARN] - msg coming from warn method 
+2024-02-22 22:15:51,395 - -> com.telusko.log4j.LaunchDemo , {service} --> [ERROR] - msg coming from error method 
+2024-02-22 22:15:51,396 - -> com.telusko.log4j.LaunchDemo , {service} --> [FATAL] - msg coming from fatal method 

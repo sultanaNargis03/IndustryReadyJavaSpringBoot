@@ -1,0 +1,14 @@
+package com.telusko.log4j;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class LaunchDemo 
+{
+	private static final Logger logger=LogManager.getLogger(LaunchDemo.class);
+	public void service()
+	{
+		//bu logic
+		//logic to store in db
+	}
+}

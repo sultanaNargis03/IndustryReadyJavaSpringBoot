@@ -1,0 +1,9 @@
+package com.telusko.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public enum CourseSelection 
+{
+
+}

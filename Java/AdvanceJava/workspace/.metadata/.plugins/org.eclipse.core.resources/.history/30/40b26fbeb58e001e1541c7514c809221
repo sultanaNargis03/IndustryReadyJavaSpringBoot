@@ -1,0 +1,46 @@
+package com.industrystd.main;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.industrystd.util.JDBCUtility;
+
+public class LaunchFetch {
+
+	public static void main(String[] args) 
+	{
+		//Resource
+		Connection connect=null;
+		Statement stmt=null;
+		ResultSet rs=null;
+		
+		try
+		{
+			connect=JDBCUtility.getDBConnection();
+			if(connect!=null)
+				stmt=connect.createStatement();
+			if(stmt!=null)
+				rs=stmt.executeQuery("SELECT * FROM studentinfo");
+			if(rs!=null)
+			{
+				
+			}
+			
+		}
+		catch(SQLException e)
+		{
+	
+		}
+		catch(Exception e)
+		{
+			
+		}
+		finally
+		{
+			
+		}
+	}
+
+}

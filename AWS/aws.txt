@@ -1,0 +1,3 @@
+console sign in url:
+
+https://590183951861.signin.aws.amazon.com/console

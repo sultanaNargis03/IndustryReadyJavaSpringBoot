@@ -1,0 +1,15 @@
+package com.telusko;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CourseApplication 
+{
+
+	public static void main(String[] args) 
+	{
+	ApplicationContext context=SpringApplication.run(CourseApplication.class, args);
+	}
+
+}

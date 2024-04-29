@@ -1,0 +1,28 @@
+package com.telusko.main;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.telusko.entity.Student;
+
+public class LaunchApp 
+{
+
+	public static void main(String[] args) 
+	{
+		SessionFactory session=new Configuration().configure().buildSessionFactory();
+		Session ses=session.openSession();
+		Transaction transaction = ses.beginTransaction();
+		
+		Student st = ses.get(Student.class, 2);
+		if(st!=null)
+		{
+			ses.delete(args);
+		}
+		
+	
+	}
+
+}

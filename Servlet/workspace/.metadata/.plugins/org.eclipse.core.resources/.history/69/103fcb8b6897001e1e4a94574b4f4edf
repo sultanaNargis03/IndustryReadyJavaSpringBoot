@@ -1,0 +1,67 @@
+package com.StudentPortal.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.StudentPortal.model.CourseModel;
+import com.StudentPortal.model.Model;
+
+@WebServlet("/course")
+public class Course extends HttpServlet 
+{
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+
+		System.out.println("inside course");
+		
+		
+		CourseModel cmodel=new CourseModel();
+		
+		List<CourseModel> courses=cmodel.readCourse();
+		 
+		 request.setAttribute("courses", courses);
+		 RequestDispatcher rd=request.getRequestDispatcher("course.jsp");
+		 rd.forward(request, response);
+		for (CourseModel course : courses) 
+		{
+			int id=course.getId();
+			String courseName=course.getCourseName();
+			double price=course.getPrice();
+			String instructor=course.getInstructor();
+		
+			request.setAttribute("id",id);
+			request.setAttribute("courseName",courseName);
+			request.setAttribute("price",price);
+			request.setAttribute("instructor",instructor);
+			RequestDispatcher rd=request.getRequestDispatcher("course.jsp");
+			rd.forward(request, response);
+			System.out.println(course);
+		}
+		
+//		int id=cmodel.getId();
+//		String courseName=cmodel.getCourseName();
+//		double price=cmodel.getPrice();
+//		String instructor=cmodel.getInstructor();
+//	
+//		request.setAttribute("id",id);
+//		request.setAttribute("courseName",courseName);
+//		request.setAttribute("price",price);
+//		request.setAttribute("instructor",instructor);
+//		RequestDispatcher rd=request.getRequestDispatcher("course.jsp");
+//		rd.forward(request, response);
+//		
+//		System.out.println(cmodel);
+		
+		
+	}
+
+}

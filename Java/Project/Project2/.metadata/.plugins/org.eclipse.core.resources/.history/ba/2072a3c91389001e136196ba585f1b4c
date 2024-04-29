@@ -1,0 +1,19 @@
+package com.telusko.app.model;
+
+import java.util.Random;
+
+import lombok.Data;
+
+@Data
+public class Transaction 
+{
+	private int amount;
+	private User user;
+	
+	Transaction(int amount,User user)
+	{
+		this.amount=amount;
+		this.user=user;
+	}
+	
+}

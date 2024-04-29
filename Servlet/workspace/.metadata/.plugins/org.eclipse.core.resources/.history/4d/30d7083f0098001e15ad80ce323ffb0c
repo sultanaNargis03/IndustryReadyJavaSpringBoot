@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Login success</title>
+	</head>
+	
+	<body background="https://www.google.com/url?sa=i&url=https%3A%2F%2Fjumpgrowth.com%2Flow-code-or-custom-app-development%2F&psig=AOvVaw3P7emkhIGAuP-H5qJ4jHC8&ust=1702369882353000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjjgJz8hoMDFQAAAAAdAAAAABAg">
+		<h2 style="color: red"><marquee>Successfully Logged in!</marquee></h2>
+		<h2>Hi ${dbuser},Welcome to our app</h2>	
+		<a href="course">view course</a>
+	</body>
+	
+</html>

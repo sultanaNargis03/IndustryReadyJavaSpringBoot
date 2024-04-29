@@ -1,0 +1,14 @@
+package com.learning.aws.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public interface IEmployeeService 
+{
+
+	
+	public ResponseEntity<List<Employee>> getAllEmployees()
+{
+		
+	}
+}

@@ -1,0 +1,12 @@
+
+import java.sql.*;
+public class LaunchJDBC1 {
+
+	public static void main(String[] args) 
+	{
+		
+		//load and register the driver
+		class.f
+	}
+
+}

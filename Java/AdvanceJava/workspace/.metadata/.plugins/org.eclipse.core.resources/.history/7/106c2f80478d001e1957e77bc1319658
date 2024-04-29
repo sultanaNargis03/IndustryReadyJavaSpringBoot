@@ -1,0 +1,12 @@
+package com.jdbc;
+import java.sql.*;
+public class LaunchJDBC2 
+{
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

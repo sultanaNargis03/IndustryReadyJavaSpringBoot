@@ -1,0 +1,53 @@
+package com.industrystd.main;
+
+import java.sql.*;
+
+import com.industrystd.util.JDBCUtility;
+
+public class LaunchPreStDelete {
+
+	public static void main(String[] args) 
+	{
+		//Resources
+		Connection connect=null;
+		Statement stmt=null;
+		ResultSet rs=null;
+		
+		try
+		{
+			connect=JDBCUtility.getDBConnection();
+			if(connect!=null)
+			{
+				String query="DELETE FROM studentdetail where id=?";
+				stmt=connect.prepareStatement(query);
+				if(stmt!=null)
+				{
+					int row=stmt.executeUpdate(query);
+					if(row!=0)
+					{
+						System.out.println("deleted successfully!!");
+					}
+					else
+					{
+						System.out.println("Failed to delete");
+					}
+				}
+			}
+		}
+		catch(SQLException e) 
+		{
+			
+		}
+		catch(Exception e) 
+		{
+			
+		}
+		finally
+		{
+			
+		}
+		
+		
+	}
+
+}

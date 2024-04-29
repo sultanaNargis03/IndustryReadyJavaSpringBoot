@@ -1,0 +1,5 @@
+package com.learning.aws.model;
+
+public class Employee {
+
+}

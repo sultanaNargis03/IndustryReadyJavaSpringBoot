@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@ page import="java.util.List" %>
+<%@ page import="com.StudentPortal.model.CourseModel" %>
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="ISO-8859-1">
+	<title>Course</title>
+	</head>
+	<body bgcolor="black">
+	
+		<form action="./course">
+			<%
+			    List<CourseModel> courses = (List<CourseModel>) request.getAttribute("courses");
+			    for (CourseModel course : courses) {
+			    	
+			    	%>
+			        <p style="color: rgb(0, 64, 0)">ID: <%= course.getId() %></p>
+			        <p style="color: rgb(0, 64, 0)">Name: <%= course.getCourseName() %></p>
+			        <p style="color: rgb(0, 64, 0)">Price: <%= course.getPrice() %></p>
+			        <p style="color: rgb(0, 64, 0)">Instructor: <%= course.getInstructor() %></p>
+			        <a style="color:red" href='buycourse.jsp'>Buy now</a>
+			        <hr>
+			    <%
+			        }
+			    %>
+		    </form>
+	</body>
+</html>

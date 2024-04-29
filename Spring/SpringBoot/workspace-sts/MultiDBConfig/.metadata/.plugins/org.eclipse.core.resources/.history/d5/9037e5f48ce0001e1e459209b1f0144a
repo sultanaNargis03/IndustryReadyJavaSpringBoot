@@ -1,0 +1,5 @@
+package com.telusko.config;
+
+public class Db2Config {
+
+}

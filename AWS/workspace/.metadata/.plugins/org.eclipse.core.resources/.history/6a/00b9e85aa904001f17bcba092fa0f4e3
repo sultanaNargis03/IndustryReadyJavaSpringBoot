@@ -1,0 +1,5 @@
+FROM amazoncorretto:21-alpline-jdk
+COPY target/EmployeeManagementApp.jar emp-mgmt-app.jar
+#ADD target/student-app.jar student-app.jar
+EXPOSE 8080
+ENTRYPOINT [ "java", "-jar","EmployeeManagementApp.jar" ]

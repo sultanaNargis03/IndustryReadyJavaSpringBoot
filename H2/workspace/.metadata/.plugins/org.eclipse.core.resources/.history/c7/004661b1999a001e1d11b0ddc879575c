@@ -1,0 +1,33 @@
+package com.telusko.main;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+
+import com.telusko.util.HibernateUtil;
+
+public class LaunchApp 
+{
+
+	public static void main(String[] args) 
+	{
+		Session session=null;
+		try 
+		{
+			session = HibernateUtil.getSession();
+		}
+		catch(HibernateException e)
+		{
+			e.printStackTrace();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			
+		}
+		
+	}
+
+}
