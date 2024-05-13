@@ -21,7 +21,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig 
 {
 	@Autowired
-	UserDetailsService userDetailsService;
+	private UserDetailsService userDetailsService;
 	
 	@Bean
 	public AuthenticationProvider authProvider()
@@ -37,8 +37,8 @@ public class SecurityConfig
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception
 	{
 		http
-			.csrf(customizer->customizer.disable())
-			.authorizeHttpRequests(request->request.anyRequest().authenticated())
+			.csrf(customizer->customizer.disable())		//disabling the csrf
+			.authorizeHttpRequests(request->request.anyRequest().authenticated())	//enabling th security for all the request
 		  //.formLogin(Customizer.withDefaults());
 			.httpBasic(Customizer.withDefaults())
 			.sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));

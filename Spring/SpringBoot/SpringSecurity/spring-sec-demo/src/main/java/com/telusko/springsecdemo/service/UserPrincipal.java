@@ -11,6 +11,7 @@ import com.telusko.springsecdemo.model.User;
 
 public class UserPrincipal implements UserDetails {
 
+	private static final long serialVersionUID = 1L;
 	private User user;
 	
 
@@ -31,21 +32,21 @@ public class UserPrincipal implements UserDetails {
 	public String getPassword() 
 	{
 		
-		return null;
+		return user.getPassword();
 	}
 
 	@Override
 	public String getUsername() 
 	{
 		
-		return null;
+		return user.getUserName();
 	}
 
 	@Override
 	public boolean isAccountNonExpired() 
 	{
 		
-		return false;
+		return true;
 	}
 
 	@Override
