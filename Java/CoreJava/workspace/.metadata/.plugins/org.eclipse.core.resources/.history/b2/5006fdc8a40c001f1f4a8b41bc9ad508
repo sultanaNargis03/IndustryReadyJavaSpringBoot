@@ -1,0 +1,23 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LaunchStreamApi {
+
+	public static void main(String[] args) {
+		
+		List<Integer> list=new ArrayList();
+		
+		list.add(20);
+		list.add(10);
+		list.add(4);
+		list.add(44);
+		list.add(8);
+		list.add(50);
+		
+		int sum=list.stream().filter(i->i%5==0).map(i->i*2).reduce(0,(c,e)->c+e);
+
+	}
+
+}

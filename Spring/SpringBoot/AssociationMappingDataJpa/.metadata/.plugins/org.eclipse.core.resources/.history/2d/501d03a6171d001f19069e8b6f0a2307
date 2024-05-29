@@ -1,0 +1,20 @@
+package com.telusko.runner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.telusko.service.PersonServiceImpl;
+
+@Component
+public class AssociationMappingRunner implements CommandLineRunner 
+{
+	
+	
+	@Override
+	public void run(String... args) throws Exception 
+	{
+		
+	}
+	
+}

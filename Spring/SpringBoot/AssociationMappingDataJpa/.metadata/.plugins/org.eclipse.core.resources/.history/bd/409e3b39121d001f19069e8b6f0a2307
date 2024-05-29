@@ -1,0 +1,24 @@
+package com.telusko.runner;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.telusko.model.Person;
+import com.telusko.model.PhoneNumber;
+
+@Component
+public class AssociationMappingRunner implements CommandLineRunner 
+{
+
+	@Override
+	public void run(String... args) throws Exception 
+	{
+		Person person =new Person("Nargis","Kol");
+		
+		PhoneNumber p1= new PhoneNumber(6564871L,"JIO");
+		PhoneNumber p2= new PhoneNumber(9235771L,"AIRTEL");
+		
+		
+	}
+	
+}

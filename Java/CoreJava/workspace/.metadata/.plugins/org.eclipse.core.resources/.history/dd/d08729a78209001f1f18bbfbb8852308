@@ -1,0 +1,27 @@
+class Human3
+{
+	public void sleep()
+	{
+		System.out.println("Human is sleeping");
+		
+	}
+}
+
+class Employee3 extends Human3
+{
+	public void sleep()
+	{
+		System.out.println("Employee needs sleep between working hour!");
+	}
+}
+public class LaunchInh7_1 
+{
+	public static void main(String[] args) 
+	{
+
+		Employee3 emp=new Employee3();
+		emp.sleep();
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.telusko.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class IPersonRepo implements JpaRepository<T, ID> {
+
+	public IPersonRepo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

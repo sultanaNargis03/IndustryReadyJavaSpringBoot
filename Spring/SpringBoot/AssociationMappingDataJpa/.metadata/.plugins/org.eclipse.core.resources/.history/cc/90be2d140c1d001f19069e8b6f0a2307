@@ -1,0 +1,7 @@
+spring.application.name=AssociationMappingDataJpa
+
+spring.datasource.url=jdbc:mysql:///jdbclearning
+spring.datasource.username=root
+spring.datasource.password=root
+
+server.port=8181

@@ -1,0 +1,5 @@
+package learning.sorting;
+
+public enum LaunchComparator {
+
+}

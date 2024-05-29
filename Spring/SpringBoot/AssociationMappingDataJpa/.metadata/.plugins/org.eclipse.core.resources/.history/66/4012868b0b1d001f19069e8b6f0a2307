@@ -1,0 +1,22 @@
+package com.telusko.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class PhoneNumber 
+{
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer regNo;
+	private Long phNo;
+	private String provider;
+	
+	public PhoneNumber() 
+	{
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class LaunchBinaryOperator {
+
+	public static void main(String[] args)
+	{
+		List<Integer> list=new ArrayList();
+		
+		list.add(20);
+		list.add(10);
+		list.add(4);
+		list.add(44);
+		list.add(8);
+		list.add(50);
+		
+		list.stream()
+			.reduce((c,e)->c+e)
+			.forEach(i->System.out.print(i+" "));
+		System.out.println();
+		
+		
+			list.stream()
+			.map(fun)
+			.forEach(i->System.out.print(i+" "));				
+
+	}
+
+}

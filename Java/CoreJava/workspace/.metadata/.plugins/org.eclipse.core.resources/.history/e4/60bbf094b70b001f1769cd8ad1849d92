@@ -1,0 +1,20 @@
+package practice;
+
+import java.util.LinkedList;
+
+public class DemoLL2 {
+
+	public static void main(String[] args) 
+	{
+		LinkedList ll=new LinkedList();
+		ll.add(5);
+		ll.add(0,6);
+		ll.offerFirst(1);
+		ll.offer(8);
+		ll.offerLast(10);
+		ll.addLast(90);
+		System.out.println(ll);
+		System.out.println(ll.size());
+	}
+
+}

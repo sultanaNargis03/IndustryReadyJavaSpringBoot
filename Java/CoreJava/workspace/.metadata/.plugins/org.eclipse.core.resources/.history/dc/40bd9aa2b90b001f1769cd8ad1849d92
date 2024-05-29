@@ -1,0 +1,24 @@
+package practice;
+
+import java.util.ArrayDeque;
+import java.util.LinkedList;
+
+public class DemoADQ {
+
+	public static void main(String[] args) 
+	{
+		ArrayDeque adq=new ArrayDeque();
+		adq.add(5);
+		adq.add(0,6);
+		adq.offer(8);
+		adq.addFirst(9);
+		adq.offerFirst(1);
+		//System.out.println(ll.peekFirst());
+		adq.addLast(90);
+		//System.out.println(ll.pollFirst());
+		adq.offerLast(10);
+		System.out.println(adq);
+		System.out.println(adq.size());
+	}
+
+}

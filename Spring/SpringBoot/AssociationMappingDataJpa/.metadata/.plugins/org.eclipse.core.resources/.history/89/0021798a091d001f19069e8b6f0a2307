@@ -1,0 +1,9 @@
+package com.telusko.model;
+
+public class PhoneNumber {
+
+	public PhoneNumber() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

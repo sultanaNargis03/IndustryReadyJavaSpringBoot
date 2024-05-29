@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="com.telusko.repository.IPersonRepo"/>
+    <fullyQualifiedTypeName name="com.telusko.repository.IPhoneNumberRepo"/>
+    <fullyQualifiedTypeName name="com.telusko.model.Person"/>
+    <fullyQualifiedTypeName name="com.telusko.model.PhoneNumber"/>
+    <fullyQualifiedTypeName name="com.telusko.service.PersonServiceImpl"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToMany"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.telusko.repository.ICourseRepository"/>
+    <fullyQualifiedTypeName name="com.telusko.repository.IStudentRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.telusko.service.StudentCourseServiceImpl"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+    <fullyQualifiedTypeName name="com.telusko.model.Student"/>
+    <fullyQualifiedTypeName name="com.telusko.model.Course"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.JoinTable"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonManagedReference"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.FetchType"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonBackReference"/>
+</qualifiedTypeNameHistroy>

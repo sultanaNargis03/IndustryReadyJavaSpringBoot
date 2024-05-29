@@ -1,0 +1,9 @@
+package com.telusko.runner;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AssociationMappingRunner implements CommandLineRunneer 
+{
+	
+}

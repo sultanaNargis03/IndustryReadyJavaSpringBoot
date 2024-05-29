@@ -1,0 +1,40 @@
+package com.telusko.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.telusko.model.Course;
+import com.telusko.model.Student;
+import com.telusko.repository.ICourseRepository;
+import com.telusko.repository.IStudentRepository;
+
+public class StudentCourseServiceImpl implements IStudentCourseService {
+
+	
+	@Autowired
+	ICourseRepository crepo;
+	
+	@Autowired
+	IStudentRepository srepo;
+	
+	@Override
+	public String saveStudent(Student student) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String saveCourse(Course course) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Student> fetchAllrecords() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

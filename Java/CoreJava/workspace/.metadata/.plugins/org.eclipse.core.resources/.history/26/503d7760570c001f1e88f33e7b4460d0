@@ -1,0 +1,24 @@
+package practice;
+
+import java.util.TreeSet;
+
+public class DemoTS {
+
+	public static void main(String[] args) 
+	{
+		TreeSet ts=new TreeSet();
+		ts.add(10);
+		ts.add(20);
+		ts.add(30);
+		ts.add(40);
+		ts.add(150);
+		ts.add(25);
+		ts.add(250);
+		ts.add(125);
+		ts.add(75);
+		//ts.add(40); //duplicates not allowed
+		System.out.println(ts);
+
+	}
+
+}

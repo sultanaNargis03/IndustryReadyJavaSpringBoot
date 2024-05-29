@@ -1,0 +1,22 @@
+package practice.two;
+
+class Alpha extends Thread
+{
+	@Override
+	public void run() 
+	{
+		System.out.println("i am running...");
+	}
+}
+
+
+public class Thread1 {
+
+	public static void main(String[] args) 
+	{
+		Alpha t1=new Alpha();
+		t1.start();
+
+	}
+
+}

@@ -1,0 +1,26 @@
+class Test
+{
+	int a, b;
+	{
+		a=100;
+		b=200;
+		System.out.println("java block");
+	}
+	Test()
+	{
+		System.out.println("a= "+a);
+		System.out.println("b= "+b);
+		
+	}
+}
+public class LaunchStatic4 {
+
+	public static void main(String[] args) 
+	{
+
+		Test obj=new Test();
+		
+
+	}
+
+}

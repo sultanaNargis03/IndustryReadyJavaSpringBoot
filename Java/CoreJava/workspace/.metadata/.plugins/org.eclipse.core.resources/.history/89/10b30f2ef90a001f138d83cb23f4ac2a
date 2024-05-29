@@ -1,0 +1,21 @@
+package practice.two;
+
+class Beta implements Runnable
+{
+	@Override
+	public void run() 
+	{
+		System.out.println("i am running...");
+	}
+}
+
+
+public class Thread2 
+{
+	public static void main(String[] args) 
+	{
+		Beta b=new Beta();
+		Thread2 t=new Thread2(b); 
+		t.start();
+	}
+}
