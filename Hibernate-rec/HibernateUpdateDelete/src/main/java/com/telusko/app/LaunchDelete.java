@@ -8,26 +8,13 @@ import org.hibernate.cfg.Configuration;
 
 import com.telusko.model.Student;
 
-public class Launchupdate 
+public class LaunchDelete 
 {
 
 	public static void main(String[] args) 
 	{
 		
-//		Configuration config=null;
-//		SessionFactory sessionFactory=null;
-//		Session session=null;
-//		Transaction transaction=null;
-//		boolean flag=false;
-//		
-//		config=new Configuration();
-//		config.configure();
-//		
-//		//if mapping class not mentioned in cgf.xml file
-//		config.addAnnotatedClass(Student.class);
-//		
-//		sessionFactory=config.buildSessionFactory();
-		
+
 		SessionFactory sessionFactory=new Configuration().configure()
 				.addAnnotatedClass(Student.class).buildSessionFactory();
 		
@@ -42,10 +29,7 @@ public class Launchupdate
 			
 			Student student=new Student(3,"Dona",4,"Kolkata");
 			
-			//session.update(student);
-			//session.saveOrUpdate(student); //first it will go with update if no record present then it will save
-			
-			session.merge(student);
+			session.remove(student);
 			
 			flag=true;
 		}
