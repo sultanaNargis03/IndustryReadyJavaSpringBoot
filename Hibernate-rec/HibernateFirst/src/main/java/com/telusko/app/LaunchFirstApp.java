@@ -17,10 +17,10 @@ public class LaunchFirstApp
 		//Step 02:
 		config.configure();
 		
-		//Step 03: Creating SessionFactory to hold all other required objects for hibernate
+		//Step 03: Creating SessionFactory object to hold all other required objects for hibernate
 		SessionFactory sessionFactory=config.buildSessionFactory();
 		
-		//Step 04: Persistence operation
+		//Step 04: Get the session object from Session Factory
 		Session session=sessionFactory.openSession();
 		
 		//Step 05 :Only for non select operation transaction must be there
